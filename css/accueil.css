@@ -1,0 +1,329 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #DD797B;
+}
+.header {
+    width: 100%;
+    
+    background: linear-gradient(180deg, #412452 0%, #B5617B 71.46%);
+    min-height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    
+}
+.title {
+    
+    font-size: 4rem;
+    margin: 15px;
+    font-family: 'Rock Salt', cursive;
+    color: #DDC772;
+    
+    
+}
+.header-gauche{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-droite{
+    display: flex;
+    flex-direction: column;
+}
+.conection {
+    background: linear-gradient(180deg, #412452 39.17%, rgba(31, 18, 64, 0.99) 39.18%, rgba(213, 158, 181, 0.55) 70.42%);
+    border-radius: 15px;
+    margin: 10px;
+    height: 30px;
+    font-family: 'Roboto',sans-serif;
+    font-size: 20px;
+    
+    color: #DDC772;
+    
+}
+.register{
+    background: linear-gradient(180deg, #412452 39.17%, rgba(31, 18, 64, 0.99) 39.18%, rgba(213, 158, 181, 0.55) 70.42%);
+    border-radius: 15px;
+    margin: 10px;
+    height: 30px;
+    font-family: 'Roboto',sans-serif;
+    font-size: 20px;
+    color: #DDC772;
+}
+#search{
+    
+    height: 25px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #D9D9D9;
+    position: relative;
+    left: 13%;
+}
+#vector{
+    margin: 15px;
+    height: 15px;
+    width: 15px;
+    position: relative;
+    right: 5%;
+    
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+ 
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+    margin: 0px;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 50px;
+	height: 20px;
+	background: grey;
+	display: block;
+	border-radius: 100px;
+	position: relative;
+    bottom: 1px;
+    
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 0.5px;
+	left: 5px;
+	width: 19px;
+	height: 19px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: #bada55;
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 30px;
+}
+
+body {
+	
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.switch {
+    display: flex;
+    align-items: center;
+    
+
+}
+#logo-lune {
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    bottom: 5px;
+    
+}
+#logo-soleil{
+    width: 18px;
+    height: 18px;
+    margin: 5px;
+    bottom: 5px;
+}
+#emoji-jap {
+    margin-bottom: 20px;
+    width: 100px;
+    height: 100px;
+}
+footer {
+    min-width: 100%;
+    border-radius: 15px;
+    background: linear-gradient(180deg, #412452 0%, #B5617B 71.46%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+
+}
+
+footer div {
+display: flex;
+justify-content: space-between;
+}
+
+footer div a {
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    width: 25%;
+    border-left: 1px solid black ;
+    font-weight: 600;
+}
+
+footer div :first-child {
+    border-left: 0px ;
+}
+
+footer figure img {
+    height: 25px;
+
+}
+footer figure p {
+    margin-top: 0;
+
+}
+.anime h3 {
+    display: block;
+    background: linear-gradient(180deg, #734573 26.04%, #D59EB5 100%);
+    min-width: 100%;
+    text-align: center;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 0;
+    padding-top: 20px;
+    
+    
+
+    }
+.anime {
+    width: 350px;
+    min-height: auto;
+    background: linear-gradient(180deg, #5D335C 0%, #B5617B 100%);
+    align-items: center;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    
+    margin-right: 20px;
+    
+
+    
+    
+    
+}
+.anime button {
+    width: 150px;
+    height: 30px;
+    background: linear-gradient(180deg, #4413B3 0%, #600D36 100%);
+    border-radius: 15px;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;    
+    color: #DDC772;
+
+}
+.actualite{
+
+    background: linear-gradient(180deg, #68385F 0%, #AF5D78 100%);
+    width: 50%;
+    border-radius: 15px;
+    
+    
+    
+}
+main{
+    display: flex;
+    
+}
+.actualite h3 {
+    text-align: center;
+    min-width: 100%;
+    background: linear-gradient(180deg, #734573 26.04%, #D59EB5 100%);
+    border-radius: 5px;
+    height: 40px;
+    margin-top: 0;
+    padding-top: 20px;
+    
+}
+.pan{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.pan2{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.pan p {
+    left: 30px;
+}
+.actualite ,.anime , .tchat{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.pan2 img, .pan2 img{
+display: flex;
+flex-direction: column;
+}
+.tchat{
+    background: linear-gradient(180deg, #68385F 0%, #AF5D78 100%);
+    width: 100%;
+    border-radius: 15px;
+    margin-left: 20px;
+    height: 250px;
+    margin-bottom: 30px;
+
+    
+}
+.tchat h3 {
+    text-align: center;
+    min-width: 100%;
+    background: linear-gradient(180deg, #734573 26.04%, #D59EB5 100%);
+    border-radius: 5px;
+    height: 40px;
+    margin-top: 0;
+    padding-top: 20px;
+    
+}
+.tchat textarea{
+    background-color: #D59EB5;
+    margin: 20px;
+    resize: none;
+    
+}
+.actualite hr{
+    border-color: black;
+    width: 50%;
+    height: 3px;
+    background-color: black;
+}
+nav{
+    display: flex;
+    
+}
+nav h2{
+    font-family: 'Roboto' sans-serif;
+    text-align: center;
+    color: #000000;
+    
+}
+.fiche, .decouverte, .forum, .goodies {
+    background: linear-gradient(180deg, #734573 26.04%, #D59EB5 100%);
+    width: 25%;
+    
+   
+    border-radius: 10px;
+}
+.gif{
+    display: flex;
+    height: 250px;
+    margin-left: 100px;
+
+}
