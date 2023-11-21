@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-radius: 15px;
+    
     
 }
 .title {
@@ -162,5 +162,9 @@ body {
 	align-items: center;
 	height: 100vh;
     font-family: 'Roboto', sans-serif;
-    background: #DD797B;
+    background: url(../img/anime-wallpaper.jpg);
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 200px;
 }
