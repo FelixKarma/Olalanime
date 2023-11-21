@@ -1,6 +1,9 @@
 body {
     font-family: 'Roboto', sans-serif;
     background: #DD797B;
+    justify-content: center;
+	align-items: center;
+	height: 100vh;
 }
 .header {
     width: 100%;
@@ -119,12 +122,7 @@ label:active:after {
 	width: 30px;
 }
 
-body {
-	
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-}
+
 .switch {
     display: flex;
     align-items: center;
