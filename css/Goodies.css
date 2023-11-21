@@ -2,10 +2,22 @@
     background: linear-gradient(180deg, #68385F 0%, #AF5D78 100%);
     margin: 50px;
     border-radius: 15px;
-}
-.onePunchMan{
     display: flex;
     justify-content: space-evenly;
+    flex-direction: column;
+    
+}
+.pGoodies p{
+    color: #DDC772;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.onePunchMan, .naruto{
+    
+    display: flex;
+    justify-content: space-evenly;
+    
 }
 .pGoodies h3 {
     text-align: center;
@@ -16,9 +28,34 @@
     padding-top: 20px;
     border-radius: 5px;
 }
-.pFig {
-    margin-left: 20px;
+
+.onePunchMan hr {
+    width: 2px;
+    height: 100px;
+    background: black;
+    border: hidden;
+    margin: 0;
+    
 }
+.sep{
+    width: 50%;
+    height: 2px;
+    background: black;
+    border: hidden;
+    
+}
+  
+
 .pGoodies img{
-    margin-left: 20px;
+    width: 10%;
+    margin: 20px;
+    
+}
+.naruto hr{
+    width: 2px;
+    height: 100px;
+    background: black;
+    border: hidden;
+    margin: 0;
+    
 }

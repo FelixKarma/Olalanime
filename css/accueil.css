@@ -1,6 +1,10 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background: #DD797B;
+    background: url(../img/anime-wallpaper.jpg);
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 200px;
     justify-content: center;
 	align-items: center;
 	height: 100vh;
@@ -13,7 +17,6 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-radius: 15px;
     
 }
 .title {
@@ -84,7 +87,7 @@ input[type=checkbox]{
     margin: 0px;
 }
 
-label {
+#lSwitch {
 	cursor: pointer;
 	text-indent: -9999px;
 	width: 50px;
@@ -97,7 +100,7 @@ label {
     
 }
 
-label:after {
+#lSwitch:after {
 	content: '';
 	position: absolute;
 	top: 0.5px;
@@ -109,11 +112,11 @@ label:after {
 	transition: 0.3s;
 }
 
-input:checked + label {
+#switch:checked + label {
 	background: #bada55;
 }
 
-input:checked + label:after {
+#switch:checked + label:after {
 	left: calc(100% - 5px);
 	transform: translateX(-100%);
 }
@@ -149,7 +152,7 @@ label:active:after {
 }
 footer {
     min-width: 100%;
-    border-radius: 15px;
+    
     background: linear-gradient(180deg, #412452 0%, #B5617B 71.46%);
     text-align: center;
     display: flex;
@@ -324,4 +327,7 @@ nav h2{
     height: 250px;
     margin-left: 100px;
 
+}
+.titreP{
+    text-decoration: none;
 }
