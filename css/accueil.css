@@ -152,7 +152,7 @@ label:active:after {
 }
 footer {
     min-width: 100%;
-    border-radius: 15px;
+    
     background: linear-gradient(180deg, #412452 0%, #B5617B 71.46%);
     text-align: center;
     display: flex;
