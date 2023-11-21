@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Olalanime</title>
+        <link rel="icon" href="../img/emoji jap.png">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../img/images.jfif">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,400&family=Rock+Salt&display=swap"
+            rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="header-gauche">
+                <img src="../img/emoji jap.png" alt="emoji_jap" id="emoji-jap">
+                <div class="switch">
+                    <img src="../img/logo soleil.png" alt="logo-soleil" id="logo-soleil">
+                    <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
+                    <img src="../img/logo-lune.png" alt="logo-lune" id="logo-lune">
+                </div>
+            </div>
+
+            <h2 class="title">Olalanime</h2>
+            <div class="header-droite">
+                <button class="conection">connexion</button>
+                <button class="register">inscription</button>
+                <div class="search">
+                    <input type="search" id="search" placeholder="Rechercher">
+                    <img src="../img/Vector.png" alt="vector" id="vector">
+                </div>
+
+
+
+            </div>
+
+        </div>
+        <nav>
+            <button class="fiche">
+                <h2>fiche</h2>
+            </button>
+            <button class="decouverte">
+                <h2>Decouverte</h2>
+            </button>
+            <button class="forum">
+                <h2>forum</h2>
+            </button>
+            <button class="goodies">
+                <h2>goodies</h2>
+            </button>
+        </nav>
+    </header>
+    <div class="profil">
+
+        <div class="imageProfil">
+            <img src="../img/image_defaut_utilisateur.webp" width="10%" />
+            <input type="file" name="imageProfil" id="imageProfil">
+            Choississez un fichier image (max 1 Mo)
+            <!-- <!"voir comment on peut limiter la taille de l'image sélectionner">
+                <! "le centrage du texte"  -->
+        </div>
+
+        <div class="profilDescription">
+            <label for="Pseudo">Pseudo 
+                <input type="text" name="pseudo" id="pseudo">
+            </label>
+            <label for="AdresseMail">Pseudo 
+                <input type="text" name="adresseMail" id="adresseMail">
+            </label>
+<!-- <! Seulement pour l'habillage de la page, Pseudo et AdresseMAil seront à récupérer via la fiche d'inscription> -->
+
+            <label for="ModifierMotDePasse">Pseudo 
+                <input type="text" name="ModifierMotDePasse" id="ModifierMotDePasse" placeholder="votre nouveau mot de passe"> 
+                <button type="submit">Envoyer ma demande</button>
+            </label>
+             <br>
+<!-- le nouveau mot de passe doit normalement être modifier dans la base de l'utilisateur -->
+</div>
+    </div>
+<div class="descriptionProfil">
+    <textarea name="" id="" cols="50" rows="5" placeholder="Décris toi comme un(e) grand(e)"></textarea>
+<br>
+<input type="submit" value="Envoyer">
+
+<!-- Quand je cliquerai sur Envoyer, je dois récupérer la description de la zone de texte et quelle apparaisse dans la zone de texte de description -->
+</div>
+
+    <footer>
+        <figure>
+            <p> Suivez nous</p>
+            <img src="../img/fb-icons.png" />
+            <img src="../img/insta-icons.png" />
+            <img src="../img/twittericons.png" />
+        </figure>
+        <div>
+            <a href="">CGU</a>
+            <a href="">Politique des cookies</a>
+            <a href="">Mention Legale</a>
+            <a href="">Qui sommes nous ?</a>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
