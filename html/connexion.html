@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>connexion</title>
-    <link rel="stylesheet" href="../css/connexion.css">
-</head>
+    <link rel="stylesheet" href="../css/connexion.css" />
+    <link rel="stylesheet" href="../css/header.css"/>
+  </head>
 
-<body>
+  <body>
     <header>
         <div class="header">
             <div class="header-gauche">
-                <img src="../images/emoji jap.png" alt="emoji_jap" id="emoji-jap">
+                <img src="../img/emoji jap.png" alt="emoji_jap" id="emoji-jap">
                 <div class="switch">
-                    <img src="../images/logo soleil.png" alt="logo-soleil" id="logo-soleil">
+                    <img src="../img/logo soleil.png" alt="logo-soleil" id="logo-soleil">
                     <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
-                    <img src="../images/logo-lune.png" alt="logo-lune" id="logo-lune">
+                    <img src="../img/logo-lune.png" alt="logo-lune" id="logo-lune">
                 </div>
             </div>
 
@@ -25,10 +26,8 @@
                 <button class="register">inscription</button>
                 <div class="search">
                     <input type="search" id="search" placeholder="Rechercher">
-                    <img src="../images/Vector.png" alt="vector" id="vector">
+                    <img src="../img/Vector.png" alt="vector" id="vector">
                 </div>
-
-
 
             </div>
 
@@ -48,11 +47,46 @@
             </button>
         </nav>
     </header>
+    <br /><br /><br /><br /><br />
+    <h2 id="connexion">Connexion</h2>
+    <h3 id="h3">En un clic avec votre compte</h3>
 
+    <div id="lien_connexion">
+      <a href="https://twitter.com/twitterfrance" target="_blank">
+        <img src="../img/icon_twitter.png" alt="lien vers twitter" />
+      </a>
+      <a href="https://accounts.google.com/login?hl=fr" target="_blank">
+        <img src="../img/icon_google.png" alt="lien vers google" />
+      </a>
+      <a href="https://fr-fr.facebook.com/" target="_blank">
+        <img src="../img/icon_facebook.png" alt="lien facebook" />
+      </a>
+    </div>
+    <br /><br /><br />
+    <p id="email">Email*</p>
+    <input
+      type="email"
+      placeholder="entrez votre adresse mail"
+      required
+      id="email"
+    />
+    <p id="mot de passe">Mot de passe*</p>
+    <input
+      type="password"
+      placeholder="entrez votre mot de passe"
+      required
+      id="password"
+    />
+    <p id="pseudo">pseudo*</p>
+    <input
+      type="text"
+      placeholder="choisissez votre pseudo"
+      required
+      id="pseudo"
+    />
+    
+   <button type="submit" id="Continuer">Continuer</button>
 
-<label for="connexion"><br>
-<input type="button" name="connexion" value="connexion" id="connexion">
-</label>
-</header>    
-</body>
+    <br /><br /><br /><br /><br />
+  </body>
 </html>

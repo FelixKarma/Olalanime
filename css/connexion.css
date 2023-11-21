@@ -260,3 +260,38 @@ main{
     justify-content: space-between;
     margin: 20px;
 }
+
+#email{
+    display: block;
+    margin: auto;
+}
+#password{
+    display: block;
+    margin: auto;
+}
+#pseudo{
+    display: block;
+    margin: auto;
+}
+#h3{
+    font-size: 40px;
+    margin: 40px;
+    text-align: center;
+    color: #F0D5D5;
+}
+
+#lien_connexion{
+    width: 200px;
+    height: 45px;
+    margin: auto;
+    display: block;
+    font-size: 20px;
+}
+
+#lien_connexion a {
+    text-decoration: none;
+}
+
+p{
+    text-align: center;
+}
