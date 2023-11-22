@@ -29,14 +29,8 @@
     border-radius: 5px;
 }
 
-.onePunchMan hr {
-    width: 2px;
-    height: 100px;
-    background: black;
-    border: hidden;
-    margin: 0;
-    
-}
+
+
 .sep{
     width: 50%;
     height: 2px;
@@ -49,13 +43,5 @@
 .pGoodies img{
     width: 10%;
     margin: 20px;
-    
-}
-.naruto hr{
-    width: 2px;
-    height: 100px;
-    background: black;
-    border: hidden;
-    margin: 0;
     
 }

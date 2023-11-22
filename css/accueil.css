@@ -300,7 +300,7 @@ flex-direction: column;
     
 }
 .actualite hr{
-    border-color: black;
+    border: 0;
     width: 50%;
     height: 3px;
     background-color: black;
