@@ -1,0 +1,66 @@
+body {
+    background-color: #DD797B;
+}
+
+h1 {
+    text-align: center;
+    color: #412452;
+}
+
+form{
+    text-align: center;
+}
+
+label{
+    color: #412452;
+}
+
+#button{
+    color: #412452;
+    background-color: #DD797B;
+    border: solid 1px #412452;
+    border-radius: 4px;
+}
+#button:hover{
+    background-color: #412452;
+    color: #FFF;
+    border: solid 1px #FFF;
+}
+
+#champobli{
+    font-size: 12px;
+
+}
+
+#nom{
+    background-color: #D59EB5;
+    border: solid 0px;
+    border-radius: 6px;
+    width: 250px;
+}
+
+#prenom{
+    background-color: #D59EB5;
+    border: solid 0px;
+    border-radius: 6px;
+    width: 250px;
+}
+
+#email{
+    background-color: #D59EB5;
+    border: solid 0px;
+    border-radius: 6px;
+    width: 250px;
+}
+
+#demande{
+    background-color: #D59EB5;
+    border: solid 0px;
+    border-radius: 6px;
+}
+
+.goku{
+    text-align: center;
+    margin-top: 20px;
+}
+
