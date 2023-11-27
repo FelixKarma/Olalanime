@@ -144,7 +144,7 @@ nav{
     
 }
 nav h2{
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     color: #000000;
     
@@ -170,22 +170,26 @@ body {
     justify-content: center;
     display: flex;
     align-items: center;
+    margin-top: 30px;
 }
 
 .ImagePageQuiSommesNous
 {
-    height: 500px;
-    width: 75%;
+    height: 400px;
+    width: 50%;
     display: block;
     margin-left:auto ;
     margin-right:auto ;
+    padding-bottom: 10px;
     
 }
 
 .ParaPageQuiSommesNous 
 {
     text-align: center;
-    font-size: 30px;
+    font-size: 20px , bold;
+    padding-bottom: 20px;
+
 }
 
 

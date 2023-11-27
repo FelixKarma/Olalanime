@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mention Legales</title>
-    <link rel="stylesheet" href="../css/mentionlegale.css">
+    <link rel="icon" href="../img/emoji jap.png">
+    <link rel="stylesheet" href="../css/QuiSommesNous.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap" rel="stylesheet">
+    <title>Olalanime</title>
 </head>
 
 <body>
@@ -15,12 +17,14 @@
                 <img src="../img/emoji jap.png" alt="emoji_jap" id="emoji-jap">
                 <div class="switch">
                     <img src="../img/logo soleil.png" alt="logo-soleil" id="logo-soleil">
-                    <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
+                    <input type="checkbox" id="switch" /><label for="switch" id="lSwitch">Toggle</label>
                     <img src="../img/logo-lune.png" alt="logo-lune" id="logo-lune">
                 </div>
             </div>
 
-            <h2 class="title">Olalanime</h2>
+            <a href="../html/Accueil.html" class="titreP">
+                <h2 class="title">Olalanime</h2>
+            </a>
             <div class="header-droite">
                 <button class="conection">connexion</button>
                 <button class="register">inscription</button>
@@ -34,21 +38,23 @@
             </div>
 
         </div>
-        <nav>
-            <button class="fiche">
-                <h2>fiche</h2>
-            </button>
-            <button class="decouverte">
-                <h2>Decouverte</h2>
-            </button>
-            <button class="forum">
-                <h2>forum</h2>
-            </button>
-            <button class="goodies">
-                <h2>goodies</h2>
-            </button>
-        </nav>
+
     </header>
+    <nav>
+        <button class="fiche">
+            <h2>fiche</h2>
+        </button>
+        <button class="decouverte">
+            <h2>Decouverte</h2>
+        </button>
+        <button class="forum" onclick="window.open('https://www.manga-fan.org/', '_blank');">
+            <h2>forum</h2>
+        </button>
+        <button class="goodies" onClick="window.location.href='../html/Goodies.html';">
+            <!-- possible de changer dans le JS -->
+            <h2>goodies</h2>
+        </button>
+    </nav>
     <h1 class="titre-mention-legale"> Mention Legales</h1> <br>
 
     <p class="paragraphe-mention-legale" id="para">
@@ -58,15 +64,16 @@
     <footer>
         <figure>
             <p> Suivez nous</p>
-            <img src="../img/fb-icons.png" />
-            <img src="../img/insta-icons.png" />
-            <img src="../img/twittericons.png" />
+            <a href="http://facebook.com"><img src="../img/fb-icons.png"/></a>
+            <a href="http://instagram.com"><img src="../img/insta-icons.png"/></a>
+            <a href="http://twitter.com/"><img src="../img/twittericons.png"/></a>
         </figure>
         <div>
+            <a href="RGPD.html">RGPD</a>
             <a href="CGU.html">CGU</a>
             <a href="PolitiqueCookies.html">Politique des cookies</a>
             <a href="mentionLegales.html">Mention Legale</a>
-            <a href="">Qui sommes nous ?</a>
+            <a href="QuiSommesNous.html">Qui sommes nous ?</a>
         </div>
 
     </footer>
