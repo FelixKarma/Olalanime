@@ -1,0 +1,52 @@
+container{
+
+   
+    justify-content: space-around;
+
+}
+
+.pageProfil {
+display: flex;
+
+}
+
+container img{
+    width: 50px;
+}
+
+.profilInformation, label{
+
+    display: flex;
+    flex-direction: column;
+}
+#ModifierMotDePasse{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+
+
+.inputProfil {
+   display: flex;
+   
+    width: 80px;
+    margin-left: 80px;
+    padding: 20px;
+    
+}
+
+#modifier, #envoyer{
+display: flex;
+  
+  
+   
+}
+
+.descriptionProfil{
+
+    display: block;
+   text-align: center;
+}
+
+
