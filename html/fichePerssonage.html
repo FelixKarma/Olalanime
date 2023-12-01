@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Fiche-Perssonage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap" rel="stylesheet">
+    <title>fiche</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="header-gauche">
+                <img src="../img/emoji jap.png" alt="emoji_jap" id="emoji-jap">
+                <div class="switch">
+                    <img src="../img/logo soleil.png" alt="logo-soleil" id="logo-soleil">
+                    <input type="checkbox" id="switch" /><label for="switch" id="lSwitch">Toggle</label>
+                    <img src="../img/logo-lune.png" alt="logo-lune" id="logo-lune">
+                </div>
+            </div>
+
+            <h2 class="title">Olalanime</h2>
+            <div class="header-droite">
+                <button class="conection">connexion</button>
+                <button class="register">inscription</button>
+                <div class="search">
+                    <input type="search" id="search" placeholder="Rechercher">
+                    <img src="../img/Vector.png" alt="vector" id="vector">
+                </div>
+
+
+
+            </div>
+
+        </div>
+        <nav>
+            <button class="fiche">
+                <h2>fiche</h2>
+            </button>
+            <button class="decouverte">
+                <h2>Decouverte</h2>
+            </button>
+            <button class="forum">
+                <h2>forum</h2>
+            </button>
+            <button class="goodies" onClick="window.open('../html/Goodies.html', '_blank')">
+                <!-- possible de changer dans le JS -->
+                <h2>goodies</h2>
+            </button>
+        </nav>
+    </header>
+    <main>
+
+        <div id=formulaire>
+            <h1> Salut Jeune OTAKU</h1>
+            <form action="" method="get" class="p">
+                <h3>Tu trouve pas ton meilleur Perssonage Pas de soucis </h3> <br>
+                <h3>Créer ta propre fiche Perssonage</h3>
+                <label for="nomsperssonage">Noms du Perssonage :
+                    <input type="text" name="name" value="" id="name"><br>​
+                </label>
+                <label for="Prenoms">Prenoms du Perssonage :
+                    <input type="text" name="name" value="" id="surname"><br>
+                </label>
+                <label for="manga">Choisi le manga de ton Perssonage : </label>​
+
+                <select id="manga" name="One-Piece"><br>​
+                    <option value="#">Choisir le manga de ton Perssonage</option> ​
+                    <option value="One-Piece">One-piece</option>​
+                    <option value="Bleach">Bleach</option>​
+                    <option value="Naruto">Naruto</option>​
+                    <option value="Dragon ball Z">Dragon Ball Z</option>
+                    <option value="HunterXHunter">HunterXHunter</option>
+                    <option value="Death-Note">Death-Note</option>
+                    <option value="One-punch-man">One-punch-man</option>
+                    <option value="Demon-Slayer">Demon-Slayer</option>
+                    <option value="Viland-Saga">Viland-Saga</option>
+                    <option value="Hells-Paradise">Hell's Paradise</option>
+                    ​<option value="Mashle">Mashle</option>
+                    <option value="TokyoRevenger">Tokyo Revenger</option>
+                    <option value="MushokuTensei">Mushoku Tensei</option>
+                    <option value="UndeadUnluck">Undead Unluck</option>
+
+                </select>
+                <br>​
+                <label for="genre">Genre du Perssonage:​
+                    <input type="radio" name="name" value="female" id="name" ><img src="../img/icons8-female-48.png" alt="female" width="28px">
+                </label>
+                <label for="genre">
+                    <input type="radio" name="name" value="male" id="name"> <img src="../img/icons8-male-48.png" alt="male" width="25px">
+                    <br>
+                    <label for="race">Quelle est la race est ton perssonage : </label>​
+
+                    <select id="race" name="Humain"><br>​
+                        <option value="#">Humain</option>
+                        <option value="Demi-humain">Demi-Humain</option>
+                        <option value="Demon">Demon</option>​
+                        <option value="Elfe">Elfe</option>​
+                        <option value="nain">Nain</option>
+                        <option value="Extraterrestre">Extraterrestre</option>​
+                        <option value="Mort Vivant">Mort Vivant</option>
+                        <option value="Goule">Goule</option>
+                        <option value="robot">Robot</option>
+                        ​
+
+                    </select>
+                    <br>
+                    <label for="weapon">Selectionne les pouvoir que posssede ton Perssonage</label>
+                    <br>
+                    <input type="checkbox" name="perssonageweapon" id="perssonageMagic"> Pouvoir magique
+                    <input type="checkbox" name="perssonageweapon" id="SuperForce"> Super Puissance Physique
+                    <input type="checkbox" name="perssonageweapon" id="perssonageweapon"> Super Arme
+                    <input type="checkbox" name="perssonageweapon" id="nopower"> Aucun Pouvoir
+                    <input type="checkbox" name="perssonageweapon" id="elemental"> Maitrise d'un élement
+                    <br>
+                    <input type="checkbox" name="perssonageweapon" id="summoner"> Invocation de monstre
+                    <input type="checkbox" name="perssonageweapon" id="immortel"> Immortel
+                    <input type="checkbox" name="perssonageweapon" id="superspeed"> Super-vitesse
+                    <input type="checkbox" name="perssonageweapon" id="Powertime"> Manipule le temps
+                    <input type="checkbox" name="perssonageweapon" id="superintelligence">Super-Intelligence
+                </label><br>
+                <label for="avatar"> Rentre une photo de ton Perssonage
+                    <input type="file" name="avatar" id="avatar" accept="image/png, image/jpeg">
+                </label>
+                <br>
+                <label for="description">Entre la bio de ton Perssonage</label>
+                <input type="text" name="discriptin" id="description-text">
+                <br>
+                <label for="partage"> Clique ici pour nous envoyer ta fiche </label>
+                <input type="submit" value="partage">
+            </form>
+        </div>
+
+    </main>
+    <footer>
+        <figure>
+            <p> Suivez nous</p>
+            <a href="http://facebook.com"> </a><img src="../img/fb-icons.png" />
+            <img src="../img/insta-icons.png" />
+            <img src="../img/twittericons.png" />
+        </figure>
+        <div>
+            <a href="RGPD.html">RGPD</a>
+            <a href="CGU.html">CGU</a>
+            <a href="PolitiqueCookies.html">Politique des cookies</a>
+            <a href="mentionLegales.html"> Mention Legale </a>
+            <a href="QuiSommesNous.html">Qui sommes nous ?</a>
+        </div>
+
+    </footer>
+
+</html>
+</body>
+
+</html>
