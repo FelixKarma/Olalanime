@@ -141,6 +141,8 @@ label:active:after {
 }
 nav{
     display: flex;
+    position: sticky;
+    top: 0;
     
 }
 nav h2{
@@ -167,4 +169,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 200px;
+}
+.titreP{
+    text-decoration: none;
 }
