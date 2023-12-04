@@ -147,6 +147,13 @@ nav{
     top: 0;
     
 }
+nav button{
+    transition: 0.5s;
+}
+nav button:hover{
+ transform: scale(1.5);
+ transition: all 0.5s;
+}
 nav h2{
     font-family: 'Roboto' sans-serif;
     text-align: center;
