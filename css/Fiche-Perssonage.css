@@ -163,12 +163,11 @@ body {
 	
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
     font-family: 'Roboto', sans-serif;
     margin: 0;
     background: linear-gradient(180deg, #412452 0%, #B5617B 71.46%);;
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
     background-position-y: 200px;
 }
 .titreP{
@@ -176,7 +175,6 @@ body {
 }
 footer {
     min-width: 100%;
-    
     background: linear-gradient(180deg, #412452 0%, #B5617B 71.46%);
     text-align: center;
     display: flex;
@@ -218,11 +216,27 @@ footer figure p {
 
 #formulaire{
     margin: 50px;
+    margin-bottom: 0;
 }
-.p{
-    display: flexbox;
-    text-align: center;
-    align-self: center;
-    justify-content: space-around;
+
+.titles {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+#imageperso {
+    display: flex;
+    justify-content: center;
+}
+
+.physique {
+    background-color: grey;
+    width: 30%;
+    display: flex;
+    
+}
+.physique2 {
+    margin-left: 5%;
     
 }
