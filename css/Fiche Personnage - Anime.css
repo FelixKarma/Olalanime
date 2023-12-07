@@ -5,6 +5,7 @@ main img{
     /* float: left; */
     
 }
+
 main section{
     width: 90%;
     background: linear-gradient(180deg, #5D335C 0%, #B5617B 100%);
@@ -14,9 +15,11 @@ main section{
     flex-direction: column;
     border-radius: 15px;
 }
+
 main{
     display: flex;
     justify-content: center;
+    background-color:#B5617B ;
 }
 #title{
     
