@@ -53,7 +53,7 @@ body {
 .anime button:hover {
     transform: scale(1.5);
     transition: all 0.5s;
-    background: linear-gradient(180deg,#600D36 100%,#4413B3 0%);
+    
 }
 .actualite{
 
