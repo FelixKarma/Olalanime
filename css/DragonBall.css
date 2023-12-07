@@ -1,8 +1,8 @@
 main img{
-    /* width: 20%; */
+    width: 20%;
     display: flex;
     margin: 20px;
-    /* float: left; */
+    float: left;
     
 }
 main section{
