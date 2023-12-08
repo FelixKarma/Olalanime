@@ -7,6 +7,7 @@
   <title>connexion</title>
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/connexion.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -26,7 +27,7 @@
         <button class="register">inscription</button>
         <div class="search">
           <input type="search" id="search" placeholder="Rechercher">
-          <img src="../img/Vector.png" alt="vector" id="vector">
+          <img src="../img/fondConnexion.jpg" alt="vector" id="vector">
         </div>
       </div>
     </div>
@@ -45,7 +46,11 @@
       </button>
     </nav>
   </header>
-
+  <strong><div class="messagesErreurs">
+    <div id="status"></div>
+    <div id="status1"></div>
+</div></strong>
+  <h1 id="error"></h1>
   <section id="tousLeFormulaire">
     <div class="wrapper">
       <div class="card-switch">
@@ -56,20 +61,21 @@
           <div class="flip-card__inner">
             <div class="flip-card__front">
               <div class="title">Se connecter</div>
-              <form class="flip-card__form" action="">
-                <input class="flip-card__input" name="email" placeholder="Email" type="email" required>
-                <input class="flip-card__input" name="password" placeholder="Password" type="password" required>
-                <button class="flip-card__btn">Let`s go!</button>
-                <link rel="stylesheet" href="pageMDP">Mot de passe oublié
+              <form class="flip-card__form" action="../html/Accueil.html" id="formSeConnecter">
+                <input class="flip-card__input" name="email" placeholder="email" type="email" required>
+                <input class="flip-card__input" name="password" placeholder="password" type="password" required>
+                <button class="flip-card__btn" id="btnSeConnecter">Let's go!</button>
               </form>
+              <a href="motDePasseOublie.html">mot de passe oublié</a>
             </div>
             <div class="flip-card__back">
               <div class="title">S'inscrire</div>
-              <form class="flip-card__form" action="">
-                <input class="flip-card__input" placeholder="Name" type="name" required>
-                <input class="flip-card__input" name="email" placeholder="Email" type="email" required>
-                <input class="flip-card__input" name="password" placeholder="Password" type="password" required>
-                <button class="flip-card__btn">Confirm!</button>
+              <form class="flip-card__form" action="../html/Accueil.html" id="formInscription">
+                <input class="flip-card__input" placeholder="name" type="name" name="name" id="nouvelUtilisateur">
+                <input class="flip-card__input" name="email" placeholder="email" type="email" required id="nouvelEmail">
+                <input class="flip-card__input" name="password" placeholder="password" type="password" required
+                  id="nouveauMotDePasse">
+                <button class="flip-card__btn" id="btnInscription">Confirm!</button>
               </form>
             </div>
           </div>
@@ -77,6 +83,14 @@
       </div>
     </div>
   </section>
+    <div class="messagesErreurs">
+      <div id="status"></div>
+      <div id="status1"></div>
+</div>
+  <script src="../js/connexion.js"></script>
+  <script src="../js/inscription.js"></script>
+
+  <footer></footer>
 </body>
 
 </html>
