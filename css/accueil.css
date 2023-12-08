@@ -47,7 +47,13 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 15px;    
     color: #DDC772;
+    transition: 0.5s;
 
+}
+.anime button:hover {
+    transform: scale(1.5);
+    transition: all 0.5s;
+    
 }
 .actualite{
 
