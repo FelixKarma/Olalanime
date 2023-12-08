@@ -30,6 +30,9 @@
   width: 50px;
   border-radius: 50%;
   border-style: solid;
+  /* position: absolute;
+  right: 50px;
+  top: 50px; */
 }
 .photoProfil img{
   max-width: 100%;
@@ -38,6 +41,8 @@
 .header-droite {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
+
 }
 
 .conection {
@@ -76,14 +81,18 @@
     margin: 15px;
     height: 15px;
     width: 15px;
+    z-index: 999;
     position: relative;
-    right: 5%;
-
+    top: 11px;
+    right: 8px;
+   
 }
 
 .search {
-    display: flex;
-    align-items: center;
+   display: flex;
+   align-items: flex-end;
+   
+   margin: 0;
 }
 
 input[type=checkbox] {
@@ -312,6 +321,7 @@ body {
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+    
   }
   
   .toggle:checked ~ .flip-card__inner {
@@ -336,6 +346,7 @@ body {
     border: 2px solid var(--main-color);
     box-shadow: 4px 4px var(--main-color);
     background-color:#B5617B;
+    
   }
   
   .flip-card__back {
@@ -422,4 +433,8 @@ body {
 }
 .card-side::after{
 
+}
+
+footer{
+  margin-top: 15%;
 }
