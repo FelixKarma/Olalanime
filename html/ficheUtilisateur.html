@@ -2,62 +2,130 @@
 <html lang="fr">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Olalanime</title>
-    <link rel="icon" href="../img/emoji jap.png">
+     <title>Olalanime</title>
+     <link rel="icon" href="../img/emoji jap.png">
+    <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/ficheUtilisateur.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,400&family=Rock+Salt&display=swap"
-        rel="stylesheet">
-   
-</head>
-
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <!-- Ajoutez le contenu du header si nécessaire -->
+        <div class="header">
+            <div class="header-gauche">
+                <img src="../img/emoji jap.png" alt="emoji_jap" id="emoji-jap">
+                <div class="switch">
+                    <img src="../img/logo soleil.png" alt="logo-soleil" id="logo-soleil">
+                    <input type="checkbox" id="switch" /><label for="switch" id="lSwitch">Toggle</label>
+                    <img src="../img/logo-lune.png" alt="logo-lune" id="logo-lune">
+                </div>
+            </div>
+
+            <a href="../html/Accueil.html" class="titreP">
+                <h2 class="title">Olalanime</h2>
+            </a>
+            <div class="header-droite">
+                <button class="conection"><a href="connexion.html">connexion</a></button>
+                <button class="register">inscription</button>
+                <div class="search">
+                    <input type="search" id="search" placeholder="Rechercher">
+                    <img src="../img/Vector.png" alt="vector" id="vector">
+                </div>
+
+
+
+            </div>
+           
+        </div>
+    <nav>
+                    <button class="fiche">
+                        <h2>Fiches</h2>
+                    </button>
+                    <button class="decouverte">
+                        <h2>Découverte</h2>
+                    </button>
+                    <button class="forum">
+                        <h2>Forum</h2>
+                    </button>
+                    <button  class="goodies" onClick="window.open('../html/Goodies.html', '_blank')" >
+                        <!-- possible de changer dans le JS -->
+                        <h2>Goodies</h2>
+                    </button>
+                </nav>
     </header>
 
-    <div class="pageProfil">
-        <div class="imageProfil">
-            <img src="../img/image_defaut_utilisateur.webp" alt="Image de profil par défaut" />
-            <input type="file" name="imageProfil" id="imageProfil">
-            <p>Choisissez un fichier image (max 1 Mo)</p>
+
+    <div id="profilContenainer">
+       
+        <div id="imagePreview"></div>
+        <input type="file" name ="imageDuProfil" accept="image/*"  id="imageDuProfil"  onchange="previewImage()"
+                oninput="previewImage()">
+                
+
+        <div class="profilInfos">
+
+
+            <div id="infos">
+                <label for="nom">Nom utilisateur :</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom à vous" required>
+            </div>
+            <div>
+                <label for="email">Adresse mail :</label>
+                <input type="email" id="email" placeholder="mail@toi.fr" required>
+            </div>
+            <div class="">
+                <label for="nouveauPassword">Modifie ton mot de passe à toi :</label>
+                <input type="password" id="nouveauPassword" placeholder="Ton nouveau mot de passe à toi">
+                <button id="buttonEnvoyer" onclick="submitForm()">Envoyer</button>
+                
+               
+            </div>
         </div>
 
-        <div class="profilInformation">
-            <label for="pseudo">Pseudo :</label>
-            <input type="text" name="pseudo" id="pseudo">
+        <div class="profil">
+            <label for="profilBio">Toi, toi et toi (300 caractères max) :</label>
+            <textarea id="profilBio" cols="50" rows="5" maxlength="300" 
+                placeholder="Décris toi comme un(e) grand(e) !!"></textarea>
 
-            <label for="adresseMail">Adresse :</label>
-            <input type="email" name="adresseMail" id="adresseMail">
 
-            <label for="modifierMotDePasse">Modifier le mot de passe </label>
-            <input type="password" name="modifierMotDePasse" id="modifierMotDePasse"
-                placeholder="Votre nouveau mot de passe">
-            <button type="submit">Envoyer ma demande</button>
+            <button id="buttonValider" onclick="submitForm()">Valider</button>
+
+
         </div>
-
-    </div>
-    <div class="descriptionProfil">
-        <textarea name="descriptionProfil" id="descriptionProfil" cols="50" rows="5"
-            placeholder="Décris toi comme un(e) grand(e) 300 carac. max"></textarea>
-
-        <div class="inputProfil">
-            <input id="modifier" type="button" value="Modifier le profil">
-            <!-- Quand je clique sur "Modifier le profil", je peux éditer la case "descriptionProfil" et la valider -->
-
-            <input id="envoyer" type="submit" value="Envoyer">
-            <!-- Quand je clique sur "Envoyer", je dois récupérer la description de la zone de texte et la faire apparaître dans la zone de texte de description -->
-        </div>
-    </div>
-
    
-</body>
+    </div>
 
-</html>
+
+
+
+
+
+
+
+    <footer>
+
+
+        <figure>
+            <p> Suivez nous</p>
+            <a href="http://facebook.com"> </a><img src="../img/fb-icons.png"/>
+            <img src="../img/insta-icons.png" />
+            <img src="../img/twittericons.png" />
+        </figure>
+        <div>
+            <a href="RGPD.html">RGPD</a>
+            <a href="CGU.html">CGU</a>
+            <a href="PolitiqueCookies.html">Politique des cookies</a>
+            <a href="mentionLegales.html"> Mentions Légales </a>
+            <a href="QuiSommesNous.html">Qui sommes nous ?</a>
+        </div>
+
+    </footer> 
+
+    <script src="../js/ficheutilisateur.js"> </script>
+</body>
 
 
 </html>

@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Réinitialiser mon mot de passe</title>
     <link rel="stylesheet" href="../css/motDePasseOublie.css">
-    
-    
+
+
 </head>
 
 <body>
@@ -48,19 +48,34 @@
         </nav>
     </header>
     <section id="main1">
-    <div class="form-container">
-        <div class="logo-container">
-          Mot de passe oublié
+        <div class="form-container">
+            <div class="logo-container">
+                Mot de passe oublié
+            </div>
+            <form class="form">
+                <div class="form-group">
+                    <hr>
+                    <input type="text" id="email2" name="email" placeholder="Enter your email" required="">
+                </div>
+                <div id="emailError" class="error-message"></div>
+                <button class="form-submit-btn" type="submit" id="myBtn">Envoyer l'email</button>
+            </form>
         </div>
-        <form class="form">
-          <div class="form-group">
-            <hr>
-            <input type="text" id="email" name="email" placeholder="Enter your email" required="">
-          </div>
-          <button class="form-submit-btn" type="submit">Envoyer l'email</button>
-        </form>
-    </div>
     </section>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <h1>Un email vient de vous être envoyé pour réinitialiser votre mot de passe.</h1>
+                <a href="../html/Accueil.html" id="BtnRetourAcc">Retour à l'accueil</a>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+
+        <script src="../js/motDePasseOublie.js"></script>
 </body>
 
 </html>
