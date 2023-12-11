@@ -1,50 +1,88 @@
-
-
-
-container {
-
-display: flex;
-
-}
-
-.imageProfil{
-
-display: flex;
-width: 150px;
-height:  150px;
-margin-left: 10px;
-
-}
-
-p{
-
-display: flex;
-align-items: center;
-}
-
-.profilInformation{
-
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-.pageProfil {
+footer {
+    min-width: 100%;
+    /* position: fixed; */
+    background: linear-gradient(180deg, #412452 0%, #B5617B 71.46%);
+    text-align: center;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    /*margin-top: 50px;*/
+    bottom: 0;
 }
 
-.descriptionProfil {
-
+footer div {
 display: flex;
-flex-direction: column;
-align-items: center;
+justify-content: space-between;
+}
+
+footer div a {
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    width: 25%;
+    border-left: 1px solid black ;
+    font-weight: 600;
+}
+
+footer div :first-child {
+    border-left: 0px ;
+}
+
+footer figure img {
+    height: 25px;
+
+}
+footer figure p {
+    margin-top: 0;
 
 }
 
-
-.inputProfil{
-
-    display: flex;
-   
+#profilContenainer {
+    background-color: #FAB796; /* Couleur saumon */
+    border-radius: 10px; 
+    padding: 50px; 
+    width: 400px; 
+    /* height: 600px; */
+    margin: auto; 
+    margin-top: 60px; 
+    margin-bottom: 60px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
+
+.profilInfos, .profil {
+    margin-bottom: 15px; 
+}
+
+#imagePreview {
+    width: 100%;
+    height: 150px; 
+    border-radius: 10px; 
+    overflow: hidden;
+}
+
+#imagePreview img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain ;
+    border-radius: 10px; 
+}
+
+#buttonEnvoyer, #buttonValider {
+    background-color: #2E6E6B; 
+    color: white; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+}
+
+
+#profilBio{
+
+    resize: none;
+}
+
+
