@@ -1,11 +1,11 @@
 .header {
-    width: 100%;
+  width: 100%;
 
-    background: linear-gradient(180deg, #412452 0%, #B5617B 71.46%);
-    min-height: 200px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  background: linear-gradient(180deg, #412452 0%, #B5617B 71.46%);
+  min-height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
 
 }
@@ -22,9 +22,9 @@
 }
 
 .header-gauche {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .photoProfil{
   width: 50px;
@@ -46,35 +46,35 @@
 }
 
 .conection {
-    background: linear-gradient(180deg, #412452 39.17%, rgba(31, 18, 64, 0.99) 39.18%, rgba(213, 158, 181, 0.55) 70.42%);
-    border-radius: 15px;
-    margin: 10px;
-    height: 30px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+  background: linear-gradient(180deg, #412452 39.17%, rgba(31, 18, 64, 0.99) 39.18%, rgba(213, 158, 181, 0.55) 70.42%);
+  border-radius: 15px;
+  margin: 10px;
+  height: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
 
-    color: #DDC772;
+  color: #DDC772;
 
 }
 
 .register {
-    background: linear-gradient(180deg, #412452 39.17%, rgba(31, 18, 64, 0.99) 39.18%, rgba(213, 158, 181, 0.55) 70.42%);
-    border-radius: 15px;
-    margin: 10px;
-    height: 30px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    color: #DDC772;
+  background: linear-gradient(180deg, #412452 39.17%, rgba(31, 18, 64, 0.99) 39.18%, rgba(213, 158, 181, 0.55) 70.42%);
+  border-radius: 15px;
+  margin: 10px;
+  height: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #DDC772;
 }
 
 #search {
 
-    height: 25px;
-    flex-shrink: 0;
-    border-radius: 15px;
-    background: #D9D9D9;
-    position: relative;
-    left: 13%;
+  height: 25px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #D9D9D9;
+  position: relative;
+  left: 13%;
 }
 
 #vector {
@@ -96,48 +96,48 @@
 }
 
 input[type=checkbox] {
-    height: 0;
-    width: 0;
-    visibility: hidden;
-    margin: 0px;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+  margin: 0px;
 }
 
 #lSwitch {
-    cursor: pointer;
-    text-indent: -9999px;
-    width: 50px;
-    height: 20px;
-    background: grey;
-    display: block;
-    border-radius: 100px;
-    position: relative;
-    bottom: 1px;
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 50px;
+  height: 20px;
+  background: grey;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+  bottom: 1px;
 
 }
 
 #lSwitch:after {
-    content: '';
-    position: absolute;
-    top: 0.5px;
-    left: 5px;
-    width: 19px;
-    height: 19px;
-    background: #fff;
-    border-radius: 90px;
-    transition: 0.3s;
+  content: '';
+  position: absolute;
+  top: 0.5px;
+  left: 5px;
+  width: 19px;
+  height: 19px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
 }
 
 #switch:checked+label {
-    background: #bada55;
+  background: #bada55;
 }
 
 #switch:checked+label:after {
-    left: calc(100% - 5px);
-    transform: translateX(-100%);
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
 }
 
 label:active:after {
-    width: 30px;
+  width: 30px;
 }
 
 .switch{
@@ -148,37 +148,37 @@ label:active:after {
 }
 
 #logo-lune {
-    width: 15px;
-    height: 15px;
-    margin: 5px;
-    bottom: 5px;
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+  bottom: 5px;
 
 }
 
 #logo-soleil {
-    width: 18px;
-    height: 18px;
-    margin: 5px;
-    bottom: 5px;
+  width: 18px;
+  height: 18px;
+  margin: 5px;
+  bottom: 5px;
 }
 
 #emoji-jap {
-    margin-bottom: 20px;
-    width: 100px;
-    height: 100px;
+  margin-bottom: 20px;
+  width: 100px;
+  height: 100px;
 }
 
 nav {
-    display: flex;
-    position: sticky;
-    top: 0;
+  display: flex;
+  position: sticky;
+  top: 0;
 
 }
 
 nav h2 {
-    font-family: 'Roboto' sans-serif;
-    text-align: center;
-    color: #000000;
+  font-family: 'Roboto' sans-serif;
+  text-align: center;
+  color: #000000;
 
 }
 
@@ -186,26 +186,26 @@ nav h2 {
 .decouverte,
 .forum,
 .goodies {
-    background: linear-gradient(180deg, #734573 26.04%, #D59EB5 100%);
-    width: 25%;
+  background: linear-gradient(180deg, #734573 26.04%, #D59EB5 100%);
+  width: 25%;
 
 
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 body {
 
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-family: 'Roboto', sans-serif;
-    background: url(../img/anime-wallpaper.jpg);
-    margin: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: 200px;
-    background-color: gray;
-    
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  background: url(../img/fondConnexion.jpg);
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 200px;
+  opacity: 100%;
+
 }
 
 
@@ -428,12 +428,9 @@ body {
  .flip-card__btn{
   background-color: #D59EB5;
  }
-.card-side::before{
 
-}
-.card-side::after{
 
-}
+
 
 footer{
   margin-top: 15%;
