@@ -61,8 +61,14 @@
         <section>
             <h2 id="title">One Punch Man</h2>
             <div>
-
-                <img src="../img/omp-differences-anime-manga.webp" alt="omp-differences-anime-manga">
+                <img id="image" src="../img/omp-differences-anime-manga.webp" alt="omp-differences-anime-manga" onclick="transformerEnVideo()">
+                
+                <div id="video-container">
+                    <video id="video" width="640" height="360" controls>
+                      <source src="../Song/One puch man.mp4" type="video/mp4">
+                      Votre navigateur ne supporte pas la lecture de vidéos.
+                    </video>
+                  </div> 
                 <p id="type">Type : Seinen</p>
                 <p>Genre: Action, Comédie</p>
                 <p>Thèmes: Aliens/Extra-Terrestres, Arts Martiaux, Combats, Cyborgs, Monstres, Parodie, Super-Héros, Super Pouvoirs
@@ -70,7 +76,9 @@
                 <p>Auteur: ONE</p>
                 <button onclick="window.location.assign('../html/Fiche Personnage - One Punch Man.html');">Fiche Personnage</button>
                 <p>Saitama est un jeune homme sans emploi et sans réelle perspective d’avenir, jusqu’au jour où il décide de prendre sa vie en main. Son nouvel objectif : devenir un super-héros. Il s’entraîne alors sans relâche pendant trois ans et devient si puissant qu’il est capable d’éliminer ses adversaires d’un seul coup de poing. On le surnomme désormais One-Punch Man. Mais rapidement, l’euphorie du succès cède place à l’ennui, car lorsqu’on est si fort, les victoires perdent de leur saveur...</p>
+                
             </div>
+            <script src="../js/audio.js"></script>
         </section>
     </main>
     <footer>
