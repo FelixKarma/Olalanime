@@ -61,8 +61,15 @@
         <section>
             <h2 id="title">Death note</h2>
             <div>
+                <div>
+                    <img id="image" src="../img/deathnote.png" onclick="transformerEnVideo()">
 
-                <img src="../img/deathnote.png" alt="deathnote.png">
+                    <div id="video-container">
+                        <video id="video" width="640" height="360" controls>
+                            <source src="../Song/Death Note OST 1 - 04 Ls Theme.mp4" type="video/mp4">
+                            Votre navigateur ne supporte pas la lecture de vidéos.
+                        </video>
+                    </div>
                 <p id="type">Type : Shônen</p>
                 <p>Genre: Drame, Fantastique, Mystère, Psychologique, Surnaturel, Thriller.</p>
                 <p>Thèmes:  Crime, Détective, Justice, Mort, Police, Shinigami
@@ -80,9 +87,21 @@
 
         <figure>
             <p> Suivez nous</p>
-            <img src="../img/fb-icons.png" />
-            <img src="../img/insta-icons.png" />
-            <img src="../img/twittericons.png" />
+            <a href="https://fr-fr.facebook.com/">
+              <img src="..//img/fb-icons.png"/>
+            </a>
+           
+            <!--<img src="../img/fb-icons.png" />-->
+
+            <a href="https://www.instagram.com/">
+               <img src="..//img/insta-icons.png">
+            </a>
+
+            <!--<img src="../img/insta-icons.png" />-->
+            <a href="https://twitter.com/">
+                <img src="..//img/icon_twitter.png">
+            </a>
+            <!--<img src="../img/twittericons.png" />-->
         </figure>
         <div>
             <a href="RGPD.html">RGPD</a>
@@ -91,7 +110,7 @@
             <a href="mentionLegales.html"> Mention Legale </a>
             <a href="QuiSommesNous.html">Qui sommes nous ?</a>
         </div>
-
+<script src="../js/audio.js"></script>
     </footer>
 </body>
 

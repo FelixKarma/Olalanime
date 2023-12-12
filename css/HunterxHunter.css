@@ -3,16 +3,17 @@ main img{
     display: flex;
     margin: 20px;
     float: left;
+    cursor: pointer;
     
 }
 main section{
-    width: 90%;
+    width: 100%;
     background: linear-gradient(180deg, #5D335C 0%, #B5617B 100%);
     display: flex;
     margin-top: 50px;
     margin-bottom: 50px;
     flex-direction: column;
-    border-radius: 15px;
+    border-radius: 0px;
 }
 main{
     display: flex;
@@ -40,4 +41,18 @@ section button{
 }
 section p{
     margin: 15px;
+}
+
+#video  {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding:0;
+    position: relative;
+}
+#video-container {
+    display: none;
+}
+button {
+    cursor: pointer;
 }

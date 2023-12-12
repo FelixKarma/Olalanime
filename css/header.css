@@ -166,7 +166,7 @@ nav h2{
     width: 25%;
     
    
-    border-radius: 10px;
+    border-radius:0 0 10px 10px;
 }
 body {
 	
@@ -182,4 +182,8 @@ body {
 }
 .titreP{
     text-decoration: none;
+}
+
+button{
+    cursor: pointer;
 }

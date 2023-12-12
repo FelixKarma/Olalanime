@@ -61,8 +61,15 @@
         <section>
             <h2 id="title">Naruto</h2>
             <div>
-
-                <img src="../img/naruto.png" alt="naruto.png">
+                <div>
+                    <img id="image" src="../img/naruto.png" alt="naruto.png" onclick="transformerEnVideo()">
+                    
+                    <div id="video-container">
+                        <video id="video" width="640" height="360" controls>
+                          <source src="../Song/Naruto Shippuden Opening 3  Blue Bird (HD).mp4" type="video/mp4">
+                          Votre navigateur ne supporte pas la lecture de vidéos.
+                        </video>
+                      </div> 
                 <p id="type">Type : Shônen</p>
                 <p>Genre: Action, Aventures, Comédie, Nekketsu</p>
                 <p>Thèmes: Amitié, Arts Martiaux, Combats, Guerre, Ninjas, Vengeance
@@ -73,15 +80,28 @@
                     Naruto offre de l'action, de l'originalité et de l'humour: bref, le parfait dosage du divertissement!</p>
             </div>
         </section>
+        <script src="../js/audio.js"></script>
     </main>
     <footer>
 
 
         <figure>
             <p> Suivez nous</p>
-            <img src="../img/fb-icons.png" />
-            <img src="../img/insta-icons.png" />
-            <img src="../img/twittericons.png" />
+            <a href="https://fr-fr.facebook.com/">
+              <img src="..//img/fb-icons.png"/>
+            </a>
+           
+            <!--<img src="../img/fb-icons.png" />-->
+
+            <a href="https://www.instagram.com/">
+               <img src="..//img/insta-icons.png">
+            </a>
+
+            <!--<img src="../img/insta-icons.png" />-->
+            <a href="https://twitter.com/">
+                <img src="..//img/icon_twitter.png">
+            </a>
+            <!--<img src="../img/twittericons.png" />-->
         </figure>
         <div>
             <a href="RGPD.html">RGPD</a>

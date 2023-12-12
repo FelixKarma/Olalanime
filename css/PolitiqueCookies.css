@@ -211,3 +211,7 @@ footer figure p {
     margin-top: 0;
 
 }
+
+button {
+    cursor: pointer;
+}

@@ -429,9 +429,13 @@ body {
   background-color: #D59EB5;
  }
 
-
-
-
 footer{
   margin-top: 15%;
+}
+.messagesErreurs{
+  padding-top: 25px;
+  color: red;
+  text-align: center;
+  font-weight: bold;
+  
 }
