@@ -54,84 +54,135 @@
     <main>
 
         <div id=formulaire>
-            <h1> Salut Jeune OTAKU</h1>
+            <h1 class="titles"> Fiche Perssonage </h1>
             <form action="" method="get" class="p">
-                <h3>Tu trouve pas ton meilleur Personnage Pas de soucis </h3> <br>
-                <h3>Créer ta propre fiche Personnage</h3>
-                <label for="nomspersonnage">Noms du Personnage :
-                    <input type="text" name="name" value="" id="name"><br>​
+                <h3 class="titles">Créer ta propre fiche Perssonage</h3>
+        </div>
+
+
+
+        <br>
+        <div class="physique">
+            <div>
+
+
+                <label for="nomsperssonage">
+                    <h5>Noms du Personage :</h5>
+                    <input type="text" name="name" value="" id="name"> ​
                 </label>
-                <label for="Prenoms">Prenoms du Personnage :
-                    <input type="text" name="name" value="" id="surname"><br>
+                <label for="Prenoms">
+                    <h5>Prenoms du Personage :</h5>
+                    <input type="text" name="name" value="" id="surname">
                 </label>
-                <label for="manga">Choisi le manga de ton Personnage : </label>​
-
-                <select id="manga" name="One-Piece"><br>​
-                    <option value="#">Choisir le manga de ton Personnage</option> ​
-                    <option value="One-Piece">One-piece</option>​
-                    <option value="Bleach">Bleach</option>​
-                    <option value="Naruto">Naruto</option>​
-                    <option value="Dragon ball Z">Dragon Ball Z</option>
-                    <option value="HunterXHunter">HunterXHunter</option>
-                    <option value="Death-Note">Death-Note</option>
-                    <option value="One-punch-man">One-punch-man</option>
-                    <option value="Demon-Slayer">Demon-Slayer</option>
-                    <option value="Viland-Saga">Viland-Saga</option>
-                    <option value="Hells-Paradise">Hell's Paradise</option>
-                    ​<option value="Mashle">Mashle</option>
-                    <option value="TokyoRevenger">Tokyo Revenger</option>
-                    <option value="MushokuTensei">Mushoku Tensei</option>
-                    <option value="UndeadUnluck">Undead Unluck</option>
-
-                </select>
-                <br>​
-                <label for="genre">Genre du Personnage:​
-                    <input type="radio" name="name" value="female" id="name" ><img src="../img/icons8-female-48.png" alt="female" width="28px">
+                <label for="Age">
+                    <h5>Age du Personage :</h5>
+                    <input type="number" name="number" max="300000" id="agePerso">
                 </label>
-                <label for="genre">
-                    <input type="radio" name="name" value="male" id="name"> <img src="../img/icons8-male-48.png" alt="male" width="25px">
-                    <br>
-                    <label for="race">Quelle est la race est ton personnage : </label>​
-
-                    <select id="race" name="Humain"><br>​
-                        <option value="#">Humain</option>
-                        <option value="Demi-humain">Demi-Humain</option>
-                        <option value="Demon">Demon</option>​
-                        <option value="Elfe">Elfe</option>​
-                        <option value="nain">Nain</option>
-                        <option value="Extraterrestre">Extraterrestre</option>​
-                        <option value="Mort Vivant">Mort Vivant</option>
-                        <option value="Goule">Goule</option>
-                        <option value="robot">Robot</option>
-                        ​
-
-                    </select>
-                    <br>
-                    <label for="weapon">Selectionne les pouvoir que posssede ton Personnage</label>
-                    <br>
-                    <input type="checkbox" name="personnageweapon" id="personnageMagic"> Pouvoir magique
-                    <input type="checkbox" name="personnageweapon" id="SuperForce"> Super Puissance Physique
-                    <input type="checkbox" name="personnageweapon" id="personnageweapon"> Super Arme
-                    <input type="checkbox" name="personnageweapon" id="nopower"> Aucun Pouvoir
-                    <input type="checkbox" name="personnageweapon" id="elemental"> Maitrise d'un élement
-                    <br>
-                    <input type="checkbox" name="personnageweapon" id="summoner"> Invocation de monstre
-                    <input type="checkbox" name="personnageweapon" id="immortel"> Immortel
-                    <input type="checkbox" name="personnageweapon" id="superspeed"> Super-vitesse
-                    <input type="checkbox" name="personnageweapon" id="Powertime"> Manipule le temps
-                    <input type="checkbox" name="personnageweapon" id="superintelligence">Super-Intelligence
-                </label><br>
+            </div>
+            <div class="physique2">
+                <label for="Taille">
+                    <h5>Taille du Personage :</h5>
+                    <input type="number" name="taille" id="taillePerso">
+                </label>
+                <label for="poids">
+                    <h5>Poids du Personage :</h5>
+                    <input type="number" name="poids" id="poidsPerso">
+                </label>
+                <label for="Yeux">
+                    <h5>Couleur des yeux du Personage :</h5>
+                    <input type="text" name="yeux" value="" id="surname">
+                </label>
+            </div>
+            <figure id="imageperso">
                 <label for="avatar"> Rentre une photo de ton Personnage
                     <input type="file" name="avatar" id="avatar" accept="image/png, image/jpeg">
-                </label>
-                <br>
-                <label for="description">Entre la bio de ton Personnage</label>
-                <input type="text" name="discriptin" id="description-text">
-                <br>
-                <label for="partage"> Clique ici pour nous envoyer ta fiche </label>
-                <input type="submit" value="partage">
-            </form>
+            </figure>
         </div>
+        <div class="genreHF">
+            <label for="genre">Genre du Personnage:​
+                <input type="radio" name="name" value="female" id="name"><img src="../img/icons8-female-48.png"
+                    alt="female" width="28px">
+            </label>
+            <label for="genre">
+                <input type="radio" name="name" value="male" id="name"> <img src="../img/icons8-male-48.png" alt="male"
+                    width="25px">
+                <br>
+        </div>
+        <br>
+        <div class="ChoisiManga">
+            <label for="manga" >
+                Choisi le manga de ton Personage :
+            </label>​
+            <select id="manga" name="One-Piece"><br>​
+                <option value="#">Choisir le manga de ton Personage</option> ​
+                <option value="One-Piece">One-piece</option>​
+                <option value="Bleach">Bleach</option>​
+                <option value="Naruto">Naruto</option>​
+                <option value="Dragon ball Z">Dragon Ball Z</option>
+                <option value="HunterXHunter">HunterXHunter</option>
+                <option value="Death-Note">Death-Note</option>
+                <option value="One-punch-man">One-punch-man</option>
+                <option value="Demon-Slayer">Demon-Slayer</option>
+                <option value="Viland-Saga">Viland-Saga</option>
+                <option value="Hells-Paradise">Hell's Paradise</option>
+                ​<option value="Mashle">Mashle</option>
+                <option value="TokyoRevenger">Tokyo Revenger</option>
+                <option value="MushokuTensei">Mushoku Tensei</option>
+                <option value="UndeadUnluck">Undead Unluck</option>
+                <option value="TokyoGoule">Tokyo Goule</option>
+            </select>
+            <label for="race" id="racePerso"  >
+                Quelle est la race est ton perssonnage :
+            </label>​
+            <select id="race" name="Humain"><br>​
+                <option value="#">Humain</option>
+                <option value="Demi-humain">Demi-Humain</option>
+                <option value="Demon">Demon</option>​
+                <option value="Elfe">Elfe</option>​
+                <option value="nain">Nain</option>
+                <option value="Extraterrestre">Extraterrestre</option>​
+                <option value="Mort Vivant">Mort Vivant</option>
+                <option value="Goule">Goule</option>
+                <option value="robot">Robot</option>
+            </select>
+        </div>
+        
+        <label for="weapon" id="barreSelectPower">Selectionne les pouvoir que posssede ton Personnage</label>
+
+        <div id="powerPerso">
+        <br>
+        
+        <input type="checkbox" name="perssonageweapon" id="perssonageMagic"> Pouvoir magique
+        <input type="checkbox" name="perssonageweapon" id="SuperForce"> Super Puissance Physique
+        <input type="checkbox" name="perssonageweapon" id="perssonageweapon"> Super Arme
+        <input type="checkbox" name="perssonageweapon" id="nopower"> Aucun Pouvoir
+        <input type="checkbox" name="perssonageweapon" id="elemental"> Maitrise d'un élement
+        <br>
+        
+        <input type="checkbox" name="perssonageweapon" id="summoner"> Invocation de monstre
+        <input type="checkbox" name="perssonageweapon" id="immortel"> Immortel
+        <input type="checkbox" name="perssonageweapon" id="superspeed"> Super-vitesse
+        <input type="checkbox" name="perssonageweapon" id="Powertime"> Manipule le temps
+        <input type="checkbox" name="perssonageweapon" id="superintelligence">Super-Intelligence
+        </label>
+        </div>
+        <br>
+        <div class="description">
+        <label for="description">Entre une petite description de ton Personnage</label>
+        <input type="text" name="discriptin" id="description-text">
+        <br></div>
+        <div id="partage">
+        <label for="partage"> Clique sur PARTAGE pour nous envoyer ta fiche </label></div>
+        <div class="styleButtonPartage">
+            <input type="submit" value="partage" id="partageButton">
+            
+            <input type="button" value="Don de 5€" id="quizzButton"> </div> 
+        
+        
+        
+        
+        
+        </form>
 
     </main>
     <footer>
