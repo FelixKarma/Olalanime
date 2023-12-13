@@ -169,15 +169,12 @@ nav h2{
     border-radius:0 0 10px 10px;
 }
 body {
-	
-	background: url(../img/anime-wallpaper.jpg);
 	height: 100vh;
     font-family: 'Roboto', sans-serif;
-    
     margin: 0;
-    
     background-size: cover;
     background-position-y: 200px;
+    background: url('../img/fondConnexion.jpg');
 }
 .titreP{
     text-decoration: none;
