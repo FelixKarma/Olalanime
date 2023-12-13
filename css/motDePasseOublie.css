@@ -1,0 +1,383 @@
+.header {
+    width: 100%;
+    background: linear-gradient(180deg, #412452 0%, #B5617B 71.46%);
+    min-height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.title {
+
+    font-size: 4rem;
+    margin: 15px;
+    font-family: 'Rock Salt', cursive;
+    color: #DDC772;
+
+
+}
+
+.header-gauche {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-droite {
+    display: flex;
+    flex-direction: column;
+}
+
+.conection {
+    background: linear-gradient(180deg, #412452 39.17%, rgba(31, 18, 64, 0.99) 39.18%, rgba(213, 158, 181, 0.55) 70.42%);
+    border-radius: 15px;
+    margin: 10px;
+    height: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+
+    color: #DDC772;
+
+}
+
+.register {
+    background: linear-gradient(180deg, #412452 39.17%, rgba(31, 18, 64, 0.99) 39.18%, rgba(213, 158, 181, 0.55) 70.42%);
+    border-radius: 15px;
+    margin: 10px;
+    height: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #DDC772;
+}
+
+#search {
+
+    height: 25px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #D9D9D9;
+    position: relative;
+    left: 13%;
+}
+
+#vector {
+    margin: 15px;
+    height: 15px;
+    width: 15px;
+    position: relative;
+    right: 5%;
+
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+    margin: 0px;
+}
+
+#lSwitch {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 50px;
+    height: 20px;
+    background: grey;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+    bottom: 1px;
+
+}
+
+#lSwitch:after {
+    content: '';
+    position: absolute;
+    top: 0.5px;
+    left: 5px;
+    width: 19px;
+    height: 19px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+#switch:checked+label {
+    background: #bada55;
+}
+
+#switch:checked+label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+label:active:after {
+    width: 30px;
+}
+
+.switch {
+    display: flex;
+    align-items: center;
+
+
+}
+
+#logo-lune {
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    bottom: 5px;
+
+}
+
+#logo-soleil {
+    width: 18px;
+    height: 18px;
+    margin: 5px;
+    bottom: 5px;
+}
+
+#emoji-jap {
+    margin-bottom: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+nav {
+    display: flex;
+    position: sticky;
+    top: 0;
+
+}
+
+nav h2 {
+    font-family: 'Roboto' sans-serif;
+    text-align: center;
+    color: #000000;
+
+}
+
+.fiche,
+.decouverte,
+.forum,
+.goodies {
+    background: linear-gradient(180deg, #734573 26.04%, #D59EB5 100%);
+    width: 25%;
+
+
+    border-radius: 10px;
+}
+
+body {
+
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background: url(../img/anime-wallpaper.jpg);
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 200px;
+    background-color: gray;
+    
+}
+
+.form-container {
+    background-color: #B5617B;
+    opacity: 0.90;
+    padding: 40px 80px;
+    font-size: 14px;
+    font-family:'Roboto',sans-serif;
+    color: #212121;
+    display: block;
+    flex-direction:column;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
+    
+  }
+  
+  .form-container button:active {
+    scale: 0.95;
+    display: flex;
+    align-items: center;
+  }
+  
+  .form-container .logo-container {
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  .form-container .form {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .form-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+  }
+  
+  .form-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-container .form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 6px;
+    font-family: inherit;
+    border: 1px solid #ccc;
+  }
+  
+  .form-container .form-group input::placeholder {
+    opacity: 0.5;
+  }
+  
+  .form-container .form-group input:focus {
+    outline: none;
+    border-color: #1778f2;
+  }
+  
+  .form-container .form-submit-btn {
+    display: block;
+    font-family:'Roboto',sans-serif;
+    color: #fff;
+    background-color: #212121;
+    border: none;
+    width: 100%;
+    padding: 12px 16px;
+    font-size: inherit;
+    gap: 8px;
+    margin: 12px 0;
+    cursor: pointer;
+    border-radius: 5%;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
+    
+  }
+  
+  .form-container .form-submit-btn:hover {
+    background-color: #313131;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .form-container .link {
+    color: #1778f2;
+    text-decoration: none;
+  }
+  
+  .form-container .signup-link {
+    align-self: center;
+    font-weight: 500;
+  }
+  
+  .form-container .signup-link .link {
+    font-weight: 400;
+   
+  }
+  
+  .form-container .link:hover {
+    text-decoration: underline;
+  }
+
+  #main1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+  }
+.signup-link{
+  align-self: center;
+}
+.form-submit-btn{
+  align-self: center;
+  padding: 12px 16px;
+}
+#email{
+  align-self: center;
+  
+}
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  -webkit-animation-name: fadeIn; 
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+  opacity: 95%;
+  
+}
+
+.modal-content {
+  position:relative;
+  bottom: 0;
+  background-color: #D59EB5;
+  width: 100%;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s
+}
+
+.close {
+  display: flex;
+  justify-content: right;
+  margin-right: 50px;
+  color: white;
+  font-size: 56px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-body{
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  align-items:center; 
+  padding-bottom: 15px;
+}
+
+.modal-footer{
+  size-adjust: cover;
+}
+#BtnRetourAcc{
+  background-color: #734573;
+  width: 175px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4%;
+  font-size: 20px;
+  text-decoration: none;
+  color: #412452;
+}
+
+
+  
+  

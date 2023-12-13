@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/contact.css">
-    <link rel="stylesheet" href="../css/header.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/footer.css">
-    <title>Contact</title>
+    <title>Contacts</title>
 </head>
 
 <body>
@@ -22,11 +22,13 @@
                         <img src="../img/logo-lune.png" alt="logo-lune" id="logo-lune">
                     </div>
                 </div>
-    
-                <h2 class="title">Olalanime</h2>
+
+                <a href="../html/Accueil.html" class="titreP">
+                    <h2 class="title">Olalanime</h2>
+
                 <div class="header-droite">
-                    <button class="conection">connexion</button>
-                    <button class="register">inscription</button>
+                    <button class="conection"><a href="connexion.html">connexion</a></button>
+                    <button class="register"><a href="connexion.html">inscription</a></button>
                     <div class="search">
                         <input type="search" id="search" placeholder="Rechercher">
                         <img src="../img/Vector.png" alt="vector" id="vector">
@@ -39,26 +41,26 @@
             </div>
         <nav>
                         <button class="fiche">
-                            <h2>fiche</h2>
+                            <h2>Fiche</h2>
                         </button>
                         <button class="decouverte">
-                            <h2>Decouverte</h2>
+                            <h2>Découverte</h2>
                         </button>
                         <button class="forum">
-                            <h2>forum</h2>
+                            <h2>Forum</h2>
                         </button>
                         <button  class="goodies" onClick="window.open('../html/Goodies.html', '_blank')" >
                             <!-- possible de changer dans le JS -->
-                            <h2>goodies</h2>
+                            <h2>Goodies</h2>
                         </button>
                     </nav>
             
 
         </header>
         <section>
-            <h1>X Y Z</h1>
+           
 
-            <form action="#">
+            <form action="#" onsubmit="return openRandomPopup()">
 
                 <label for="nom">Votre nom:* <br>
                     <input type="text" name="nom" id="nom" placeholder="Nom" required>
@@ -76,21 +78,28 @@
                 <textarea name="demande" id="demande" cols="30" rows="10" placeholder="Votre demande"></textarea> <br>
 
                 <label id="champobli">* champs obligatoire</label><br>
-                <input type="submit" value="Envoyer" id="button">
+                <input type="submit" value="Envoyer" id="button"  >
 
             </form>
         </section>
         <div class="goku">
-            <img src="../img/goku.gif" alt="gif goku" id="gokugif">
+            <img src="../img/page xyz.gif" alt="gif goku" id="gokugif">
         </div>
         <footer>
 
 
             <figure>
                 <p> Suivez nous</p>
-                <a href="http://facebook.com"> </a><img src="../img/fb-icons.png"/>
-                <img src="../img/insta-icons.png" />
-                <img src="../img/twittericons.png" />
+                <a href="http://facebook.com"  target="_blank">
+                    <img src="../img/fb-icons.png" ></a>
+
+                    <a href="http://www.instagram.com"  target="_blank">
+                     <img src="../img/insta-icons.png" /></a>
+
+                    <a href="http://twitter.com/twitterfrance"  target="_blank">
+                    <img src="../img/twittericons.png" /></a>
+
+
             </figure>
             <div>
                 <a href="RGPD.html">RGPD</a>
@@ -103,6 +112,8 @@
         </footer>
         
     </main>
+
+    <script src="../js/contact.js"></script>
 </body>
 
 </html>

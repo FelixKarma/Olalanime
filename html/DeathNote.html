@@ -28,8 +28,8 @@
                 <h2 class="title">Olalanime</h2>
             </a>
             <div class="header-droite">
-                <button class="conection">connexion</button>
-                <button class="register">inscription</button>
+                <button class="conection"><a href="connexion.html">connexion</a></button>
+                <button class="register"><a href="connexion.html">inscription</a></button>
                 <div class="search">
                     <input type="search" id="search" placeholder="Rechercher">
                     <img src="../img/Vector.png" alt="vector" id="vector">
@@ -61,14 +61,21 @@
         <section>
             <h2 id="title">Death note</h2>
             <div>
+                <div>
+                    <img id="image" src="../img/deathnote.png" onclick="transformerEnVideo()">
 
-                <img src="../img/deathnote.png" alt="deathnote.png">
+                    <div id="video-container">
+                        <video id="video" width="640" height="360" controls>
+                            <source src="../Song/Death Note OST 1 - 04 Ls Theme.mp4" type="video/mp4">
+                            Votre navigateur ne supporte pas la lecture de vidéos.
+                        </video>
+                    </div>
                 <p id="type">Type : Shônen</p>
                 <p>Genre: Drame, Fantastique, Mystère, Psychologique, Surnaturel, Thriller.</p>
                 <p>Thèmes:  Crime, Détective, Justice, Mort, Police, Shinigami
                 </p>
                 <p>Auteur: OHBA Tsugumi (Scénario), OBATA Takeshi (Dessin)</p>
-                <button>Fiche personnage</button>
+                <button onclick="window.location.assign('../html/Fiche Personnage - Death Note.html');">Fiche Personnage</button>
                 <p> Light Yagami est un lycéen âgé de 17 ans, jeune homme brillant, fils d'un policier, il découvre un étrange carnet qui se révèle être le livre d'un dieu de la mort : Ryûk ! Light apprendra vite quels terribles pouvoirs renferment ce carnet : tous ceux dont le nom est inscrit dans le Death Note sont appelés à mourir dans les 40 secondes qui suivent !
                     Les implications sont énormes et en possession d'un tel carnet Light est potentiellement capable d'imposer sa loi à un monde qu'il estime perverti. Mais peut-on choisir qui va vivre et qui va mourir ? Certaines personnes méritent-elles de mourir par la seule volonté d'un adolescent, à la fois juge et bourreau pour une sentence irrévocable ?
                     En agissant de la sorte Light devient lui-même un criminel, il éveille ainsi l'attention de L, enquêteur mystérieux mandaté par Interpol. Un duel sans merci s'engage entre ces deux esprits exceptionnels !</p>
@@ -80,9 +87,21 @@
 
         <figure>
             <p> Suivez nous</p>
-            <img src="../img/fb-icons.png" />
-            <img src="../img/insta-icons.png" />
-            <img src="../img/twittericons.png" />
+            <a href="https://fr-fr.facebook.com/">
+              <img src="..//img/fb-icons.png"/>
+            </a>
+           
+            <!--<img src="../img/fb-icons.png" />-->
+
+            <a href="https://www.instagram.com/">
+               <img src="..//img/insta-icons.png">
+            </a>
+
+            <!--<img src="../img/insta-icons.png" />-->
+            <a href="https://twitter.com/">
+                <img src="..//img/icon_twitter.png">
+            </a>
+            <!--<img src="../img/twittericons.png" />-->
         </figure>
         <div>
             <a href="RGPD.html">RGPD</a>
@@ -91,7 +110,7 @@
             <a href="mentionLegales.html"> Mention Legale </a>
             <a href="QuiSommesNous.html">Qui sommes nous ?</a>
         </div>
-
+<script src="../js/audio.js"></script>
     </footer>
 </body>
 

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réinitialiser mon mot de passe</title>
+    <link rel="stylesheet" href="../css/motDePasseOublie.css">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="header-gauche">
+                <img src="../img/emoji jap.png" alt="emoji_jap" id="emoji-jap">
+                <div class="switch">
+                    <img src="../img/logo soleil.png" alt="logo-soleil" id="logo-soleil">
+                    <input type="checkbox" id="switch" /><label for="switch" id="lSwitch">Toggle</label>
+                    <img src="../img/logo-lune.png" alt="logo-lune" id="logo-lune">
+                </div>
+            </div>
+            <h2 class="title">Olalanime</h2>
+            <div class="header-droite">
+                <button class="conection">connexion</button>
+                <button class="register">inscription</button>
+                <div class="search">
+                    <input type="search" id="search" placeholder="Rechercher">
+                    <img src="../img/Vector.png" alt="vector" id="vector">
+                </div>
+            </div>
+        </div>
+        <nav>
+            <button class="fiche">
+                <h2>fiche</h2>
+            </button>
+            <button class="decouverte">
+                <h2>Decouverte</h2>
+            </button>
+            <button class="forum">
+                <h2>forum</h2>
+            </button>
+            <button class="goodies" onClick="window.open('../html/Goodies.html', '_blank')">
+                <!-- possible de changer dans le JS -->
+                <h2>goodies</h2>
+            </button>
+        </nav>
+    </header>
+    <section id="main1">
+        <div class="form-container">
+            <div class="logo-container">
+                Mot de passe oublié
+            </div>
+            <form class="form">
+                <div class="form-group">
+                    <hr>
+                    <input type="text" id="email2" name="email" placeholder="Enter your email" required="">
+                </div>
+                <div id="emailError" class="error-message"></div>
+                <button class="form-submit-btn" type="submit" id="myBtn">Envoyer l'email</button>
+            </form>
+        </div>
+    </section>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <h1>Un email vient de vous être envoyé pour réinitialiser votre mot de passe.</h1>
+                <a href="../html/Accueil.html" id="BtnRetourAcc">Retour à l'accueil</a>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+
+        <script src="../js/motDePasseOublie.js"></script>
+</body>
+
+</html>

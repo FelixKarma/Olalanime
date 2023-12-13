@@ -28,8 +28,8 @@
                 <h2 class="title">Olalanime</h2>
             </a>
             <div class="header-droite">
-                <button class="conection">connexion</button>
-                <button class="register">inscription</button>
+                <button class="conection"><a href="connexion.html">connexion</a></button>
+                <button class="register"><a href="connexion.html">inscription</a></button>
                 <div class="search">
                     <input type="search" id="search" placeholder="Rechercher">
                     <img src="../img/Vector.png" alt="vector" id="vector">
@@ -61,27 +61,47 @@
         <section>
             <h2 id="title">Naruto</h2>
             <div>
-
-                <img src="../img/naruto.png" alt="naruto.png">
+                <div>
+                    <img id="image" src="../img/naruto.png" alt="naruto.png" onclick="transformerEnVideo()">
+                    
+                    <div id="video-container">
+                        <video id="video" width="640" height="360" controls>
+                          <source src="../Song/Naruto Shippuden Opening 3  Blue Bird (HD).mp4" type="video/mp4">
+                          Votre navigateur ne supporte pas la lecture de vidéos.
+                        </video>
+                      </div> 
                 <p id="type">Type : Shônen</p>
                 <p>Genre: Action, Aventures, Comédie, Nekketsu</p>
                 <p>Thèmes: Amitié, Arts Martiaux, Combats, Guerre, Ninjas, Vengeance
                 </p>
                 <p>Auteur: Kishimoto Masashi</p>
-                <button>Fiche personnage</button>
+                <button onclick="window.location.assign('../html/Fiche Personnage - Naruto.html');">Fiche Personnage</button>
                 <p>Naruto est un garçon un peu spécial. Solitaire au caractère fougueux, il n'est pas des plus appréciés dans son village. Malgré cela, il garde au fond de lui une ambition: celle de devenir un "maître Hokage", la plus haute distinction dans l'ordre des ninjas, et ainsi obtenir la reconnaissance de ses pairs mais cela ne sera pas de tout repos... Suivez l'éternel farceur dans sa quête du secret de sa naissance et de la conquête des fruits de son ambition!
                     Naruto offre de l'action, de l'originalité et de l'humour: bref, le parfait dosage du divertissement!</p>
             </div>
         </section>
+        <script src="../js/audio.js"></script>
     </main>
     <footer>
 
 
         <figure>
             <p> Suivez nous</p>
-            <img src="../img/fb-icons.png" />
-            <img src="../img/insta-icons.png" />
-            <img src="../img/twittericons.png" />
+            <a href="https://fr-fr.facebook.com/">
+              <img src="..//img/fb-icons.png"/>
+            </a>
+           
+            <!--<img src="../img/fb-icons.png" />-->
+
+            <a href="https://www.instagram.com/">
+               <img src="..//img/insta-icons.png">
+            </a>
+
+            <!--<img src="../img/insta-icons.png" />-->
+            <a href="https://twitter.com/">
+                <img src="..//img/icon_twitter.png">
+            </a>
+            <!--<img src="../img/twittericons.png" />-->
         </figure>
         <div>
             <a href="RGPD.html">RGPD</a>

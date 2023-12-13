@@ -28,8 +28,8 @@
                 <h2 class="title">Olalanime</h2>
             </a>
             <div class="header-droite">
-                <button class="conection">connexion</button>
-                <button class="register">inscription</button>
+                <button class="conection"><a href="connexion.html">connexion</a></button>
+                <button class="register"><a href="connexion.html">inscription</a></button>
                 <div class="search">
                     <input type="search" id="search" placeholder="Rechercher">
                     <img src="../img/Vector.png" alt="vector" id="vector">
@@ -61,26 +61,47 @@
         <section>
             <h2 id="title">Hunter X Hunter</h2>
             <div>
+                <div>
+                    <img id="image" src="../img/hunter x hunter.png" alt="onepiece.png" onclick="transformerEnVideo()">
+                    
+                    <div id="video-container">
+                        <video id="video" width="640" height="360" controls>
+                          <source src="../Song/Hunter X Hunter Opening 1.mp4" type="video/mp4">
+                          Votre navigateur ne supporte pas la lecture de vidéos.
+                        </video>
+                      </div> 
 
-                <img src="../img/hunter x hunter.png" alt="hunterxhunter.png">
                 <p id="type">Type : Shônen</p>
                 <p>Genre: Action, aventure, drame, fantasy, nekketsu</p>
                 <p>Thèmes: : Arts martiaux, chasseur de primes, aprentisage
                 </p>
                 <p>Auteur: Yoshihiro Togashi</p>
-                <button>Fiche personnage</button>
+                <button onclick="window.location.assign('../html/Fiche Personnage - Hunter X Hunter.html');">Fiche Personnage</button>
                 <p> Gon Freeks est un jeune garçon provenant d'un petit village aimé des animaux. Il rêve de devenir Hunter afin de retrouver son père, le plus grand Hunter de tous, qu'il n'a jamais vu qu'en photo. Mais pour devenir Hunter professionnel, il faut passer plusieurs épreuves et tests très difficiles. Pendant les épreuves, Gon fait la connaissance d'amis tel que Kirua, Kurapica, Leorio mais de très dangereux combattants sont également présent afin de passer le test de Hunter.</p>
             </div>
         </section>
+        <script src="../js/audio.js"></script>
     </main>
     <footer>
 
 
         <figure>
             <p> Suivez nous</p>
-            <img src="../img/fb-icons.png" />
-            <img src="../img/insta-icons.png" />
-            <img src="../img/twittericons.png" />
+            <a href="https://fr-fr.facebook.com/">
+              <img src="..//img/fb-icons.png"/>
+            </a>
+           
+            <!--<img src="../img/fb-icons.png" />-->
+
+            <a href="https://www.instagram.com/">
+               <img src="..//img/insta-icons.png">
+            </a>
+
+            <!--<img src="../img/insta-icons.png" />-->
+            <a href="https://twitter.com/">
+                <img src="..//img/icon_twitter.png">
+            </a>
+            <!--<img src="../img/twittericons.png" />-->
         </figure>
         <div>
             <a href="RGPD.html">RGPD</a>

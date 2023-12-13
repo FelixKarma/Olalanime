@@ -2,12 +2,58 @@ body {
     font-family: 'Roboto', sans-serif;
     background: url(../img/anime-wallpaper.jpg);
     margin: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat-y;
+    
     background-position-y: 200px;
-    justify-content: center;
-	align-items: center;
-	height: 100vh;
+
+	/* height: 100vh; */
+}
+#carousel-container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    display: block;
+    margin-top: 50px;
+    background: linear-gradient(180deg, #73457387 26.04%, #D59EB5 100% );
+    padding: 30px;
+    border-radius: 50px;
+    
+}
+
+#carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+.btnCaroussel{
+    cursor: pointer;
+    position: absolute;
+}
+#btnCarousselG{
+    left: 80px;
+    top: 420px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(180deg);
+}
+#btnCarousselD{
+    right: 80px;
+    top: 420px;
+    width: 100px;
+    height: 100px;
+}
+#btnCarousselD:hover{
+    
+    transform: scale(1.5);
+}
+#btnCarousselG:hover{
+    
+    transform: scale(1.5) rotate(180deg);
 }
 
 .anime h3 {
@@ -47,7 +93,13 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 15px;    
     color: #DDC772;
+    transition: 0.5s;
 
+}
+.anime button:hover {
+    transform: scale(1.5);
+    transition: all 0.5s;
+    
 }
 .actualite{
 
@@ -128,6 +180,7 @@ flex-direction: column;
 }
 nav{
     display: flex;
+    z-index: 999;
     
 }
 nav h2{
@@ -141,7 +194,7 @@ nav h2{
     width: 25%;
     
    
-    border-radius: 10px;
+    border-radius:0 0 10px 10px;
 }
 .gif{
     display: flex;

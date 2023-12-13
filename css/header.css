@@ -35,10 +35,12 @@
     height: 30px;
     font-family: 'Roboto',sans-serif;
     font-size: 20px;
-    
-    color: #DDC772;
-    
 }
+.conection a, .register a {
+text-decoration: none;
+    color: #DDC772;
+}
+    
 .register{
     background: linear-gradient(180deg, #412452 39.17%, rgba(31, 18, 64, 0.99) 39.18%, rgba(213, 158, 181, 0.55) 70.42%);
     border-radius: 15px;
@@ -145,6 +147,14 @@ nav{
     top: 0;
     
 }
+nav button{
+    transition: 0.2s;
+}
+nav button:hover{
+ transform: scale(1.5);
+ transition: all 0.5s;
+ 
+}
 nav h2{
     font-family: 'Roboto' sans-serif;
     text-align: center;
@@ -156,20 +166,23 @@ nav h2{
     width: 25%;
     
    
-    border-radius: 10px;
+    border-radius:0 0 10px 10px;
 }
 body {
 	
-	justify-content: center;
-	align-items: center;
+	background: url(../img/anime-wallpaper.jpg);
 	height: 100vh;
     font-family: 'Roboto', sans-serif;
-    background: url(../img/anime-wallpaper.jpg);
+    
     margin: 0;
-    background-repeat: no-repeat;
+    
     background-size: cover;
     background-position-y: 200px;
 }
 .titreP{
     text-decoration: none;
+}
+
+button{
+    cursor: pointer;
 }

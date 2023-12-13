@@ -28,8 +28,8 @@
                 <h2 class="title">Olalanime</h2>
             </a>
             <div class="header-droite">
-                <button class="conection">connexion</button>
-                <button class="register">inscription</button>
+                <button class="conection"><a href="connexion.html">connexion</a></button>
+                <button class="register"><a href="connexion.html">inscription</a></button>
                 <div class="search">
                     <input type="search" id="search" placeholder="Rechercher">
                     <img src="../img/Vector.png" alt="vector" id="vector">
@@ -61,26 +61,45 @@
         <section>
             <h2 id="title">One Piece</h2>
             <div>
-
-                <img src="../img/onepiece.png" alt="onepiece.png">
+                <img id="image" src="../img/onepiece.png" alt="onepiece.png" onclick="transformerEnVideo()">
+                
+                <div id="video-container">
+                    <video id="video" width="640" height="360" controls>
+                      <source src="../Song/One Piece  Opening 1 - We Are!  4K Creditless.mp4" type="video/mp4">
+                      Votre navigateur ne supporte pas la lecture de vidéos.
+                    </video>
+                  </div> 
                 <p id="type">Type : Shônen</p>
                 <p>Genre: Nekketsu, aventure, comédie, drame, fantasy, humour, satire</p>
                 <p>Thèmes: Piraterie, amitié, liberté
                 </p>
                 <p>Auteur: Eiichirō Oda</p>
-                <button>Fiche personnage</button>
+                <button onclick="window.location.assign('../html/Fiche Personnage - One Piece.html');">Fiche Personnage</button>
                 <p> L'histoire de One Piece se déroule dans un monde fictif dominé par les océans, où certains pirates aspirent à une ère de liberté et d'aventure connue comme « l'âge d'or de la piraterie ». Cette époque fut inaugurée à la suite des derniers mots prononcés par le roi des pirates, Gol D.</p>
             </div>
         </section>
+        <script src="../js/audio.js"></script>
     </main>
     <footer>
 
 
         <figure>
             <p> Suivez nous</p>
-            <img src="../img/fb-icons.png" />
-            <img src="../img/insta-icons.png" />
-            <img src="../img/twittericons.png" />
+            <a href="https://fr-fr.facebook.com/">
+              <img src="..//img/fb-icons.png"/>
+            </a>
+           
+            <!--<img src="../img/fb-icons.png" />-->
+
+            <a href="https://www.instagram.com/">
+               <img src="..//img/insta-icons.png">
+            </a>
+
+            <!--<img src="../img/insta-icons.png" />-->
+            <a href="https://twitter.com/">
+                <img src="..//img/icon_twitter.png">
+            </a>
+            <!--<img src="../img/twittericons.png" />-->
         </figure>
         <div>
             <a href="RGPD.html">RGPD</a>

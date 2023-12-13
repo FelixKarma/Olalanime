@@ -1,75 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>connexion</title>
-  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
   <link rel="stylesheet" href="../css/connexion.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
     <div class="header">
-      <div class="header-gauche">
-        <img src="../img/emoji jap.png" alt="emoji_jap" id="emoji-jap">
-        <div class="switch">
-          <img src="../img/logo soleil.png" alt="logo-soleil" id="logo-soleil">
-          <input type="checkbox" id="switch" /><label for="switch" id="lSwitch">Toggle</label>
-          <img src="../img/logo-lune.png" alt="logo-lune" id="logo-lune">
+        <div class="header-gauche">
+            <img src="../img/emoji jap.png" alt="emoji_jap" id="emoji-jap">
+            <div class="switch">
+                <img src="../img/logo soleil.png" alt="logo-soleil" id="logo-soleil">
+                <input type="checkbox" id="switch" /><label for="switch" id="lSwitch">Toggle</label>
+                <img src="../img/logo-lune.png" alt="logo-lune" id="logo-lune">
+            </div>
         </div>
-      </div>
-      <h2 class="title">Olalanime</h2>
-      <div class="header-droite">
-        <button class="conection">connexion</button>
-        <button class="register">inscription</button>
-        <div class="search">
-          <input type="search" id="search" placeholder="Rechercher">
-          <img src="../img/Vector.png" alt="vector" id="vector">
-        </div>
-      </div>
-    </div>
-    <nav>
-      <button class="fiche">
-        <h2>fiche</h2>
-      </button>
-      <button class="decouverte">
-        <h2>Decouverte</h2>
-      </button>
-      <button class="forum">
-        <h2>forum</h2>
-      </button>
-      <button class="goodies" onClick="window.open('../html/Goodies.html', '_blank')">
-        <h2>goodies</h2>
-      </button>
-    </nav>
-  </header>
 
+        <a href="../html/Accueil.html" class="titreP" style="text-decoration: none;">
+            <h2 class="titleHeader">Olalanime</h2>
+        </a>
+        <div class="header-droite">
+            <div class="photoProfil">
+              <img src="../img/casque.png" alt="">
+            </div>
+            <div class="search">
+                <input type="search" id="search" placeholder="Rechercher">
+                <img src="../img/Vector.png" alt="vector" id="vector">
+            </div>
+
+
+
+        </div>
+
+    </div>
+    
+</header>
+  <nav>
+    <button class="fiche">
+      <h2>fiche</h2>
+    </button>
+    <button class="decouverte">
+      <h2>Decouverte</h2>
+    </button>
+    <button class="forum" onclick="window.open('https://www.manga-fan.org/', '_blank');">
+      <h2>forum</h2>
+    </button>
+    <button class="goodies" onClick="window.location.href='../html/Goodies.html';">      <h2>goodies</h2>
+    </button>
+  </nav>
+<div class="messagesErreurs">
+      <div id="status"></div>
+      <div id="status1"></div>
+</div>
   <section id="tousLeFormulaire">
     <div class="wrapper">
       <div class="card-switch">
-        <label class="switch">
+        <label class="switchConnexion">
           <input type="checkbox" class="toggle">
           <span class="slider"></span>
           <span class="card-side"></span>
           <div class="flip-card__inner">
             <div class="flip-card__front">
               <div class="title">Se connecter</div>
-              <form class="flip-card__form" action="">
-                <input class="flip-card__input" name="email" placeholder="Email" type="email" required>
-                <input class="flip-card__input" name="password" placeholder="Password" type="password" required>
-                <button class="flip-card__btn">Let`s go!</button>
-                <link rel="stylesheet" href="pageMDP">Mot de passe oublié
+              <form class="flip-card__form" action="../html/Accueil.html" id="formSeConnecter">
+                <input class="flip-card__input" name="email" placeholder="email" type="email" required>
+                <input class="flip-card__input" name="password" placeholder="password" type="password" required>
+                <button class="flip-card__btn" id="btnSeConnecter">Let's go!</button>
               </form>
+              <a href="motDePasseOublie.html">mot de passe oublié</a>
             </div>
             <div class="flip-card__back">
               <div class="title">S'inscrire</div>
-              <form class="flip-card__form" action="">
-                <input class="flip-card__input" placeholder="Name" type="name" required>
-                <input class="flip-card__input" name="email" placeholder="Email" type="email" required>
-                <input class="flip-card__input" name="password" placeholder="Password" type="password" required>
-                <button class="flip-card__btn">Confirm!</button>
+              <form class="flip-card__form" action="../html/Accueil.html" id="formInscription">
+                <input class="flip-card__input" placeholder="name" type="name" name="name" id="nouvelUtilisateur">
+                <input class="flip-card__input" name="email" placeholder="email" type="email" required id="nouvelEmail">
+                <input class="flip-card__input" name="password" placeholder="password" type="password" required
+                  id="nouveauMotDePasse">
+                <button class="flip-card__btn" id="btnInscription">Confirm!</button>
               </form>
             </div>
           </div>
@@ -77,6 +90,11 @@
       </div>
     </div>
   </section>
+    
+  <script src="../js/connexion.js"></script>
+  <script src="../js/inscription.js"></script>
+
+  <footer></footer>
 </body>
 
 </html>
