@@ -170,13 +170,12 @@ nav h2{
 }
 body {
 	
-	justify-content: center;
-	align-items: center;
+	
 	height: 100vh;
     font-family: 'Roboto', sans-serif;
-    background: url(../img/anime-wallpaper.jpg);
+    
     margin: 0;
-    background-repeat: no-repeat;
+    
     background-size: cover;
     background-position-y: 200px;
 }
