@@ -27,17 +27,26 @@ document.addEventListener('DOMContentLoaded', function () {
             statusElement.textContent = 'Mot de passe incorrect.';
             return;
         }
-
-
-        window.location.href = '../html/Accueil.html';
+        
+        localStorage.setItem('isLoggedIn', 'true');
+        
     }
-
-
+    
+    
     const loginButton = document.getElementById('btnSeConnecter');
-
+    
     loginButton.addEventListener('click', function (event) {
         event.preventDefault();
         loginUser();
+        const previousPage = localStorage.getItem('previousPage');
+        if (previousPage) {
+            document.getElementById("formSeConnecter").setAttribute("action",previousPage)
+            window.location.href = previousPage;
+        } else {
+        window.location.href = '../html/Accueil.html';
+        }
     });
 });
+
+
 
