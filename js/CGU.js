@@ -90,3 +90,7 @@ exclure l'une de nos ou de vos responsabilités qui ne peuvent être exclues en 
 Les limitations et interdictions de responsabilité fixées dans cette section et ailleurs dans cette clause de non-responsabilité : (a) sont soumises au paragraphe précédent ; et (b) régissent toutes les responsabilités découlant de la clause de non-responsabilité, y compris les responsabilités contractuelles, délictuelles et pour violation d'une obligation légale.
 
 Tant que le site web et les informations et services du site web sont fournis gratuitement, nous ne serons pas responsables de toute perte ou dommage de quelque nature que ce soit.`
+
+
+let ficheExistante = localStorage.getItem("ficheAnimecacax");
+console.log(ficheExistante);

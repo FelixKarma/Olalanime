@@ -28,8 +28,9 @@
                 <h2 class="title">Olalanime</h2>
             </a>
             <div class="header-droite">
-                <button class="conection"><a href="connexion.html">connexion</a></button>
-                <button class="register"><a href="connexion.html"> inscription</a></button>
+                <button class="conection" id="conection" onclick="localStorage.setItem('previousPage', window.location.href);"><a href="connexion.html">connexion</a></button>
+                <button class="conection" id="logoutBtn"><a href="Accueil.html">deconnexion</a></button>
+                <button class="register" id="register"><a href="connexion.html">inscription</a></button>
                 <div class="search">
                     <input type="search" id="search" placeholder="Rechercher">
                     <img src="../img/Vector.png" alt="vector" id="vector">
@@ -136,6 +137,7 @@
     </footer> 
 
     <script src="../js/ficheutilisateur.js"> </script>
+    <script src="../js/boutonLoginLogout.js"></script>
 </body>
 
 

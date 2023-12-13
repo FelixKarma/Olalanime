@@ -1,0 +1,19 @@
+/* Style pour chaque élément de liste */
+#links-container li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Style pour l'image dans chaque élément de liste */
+#links-container li img {
+    margin-right: 10px;
+}
+
+/* Style pour la div contenant le texte */
+#links-container li div {
+    min-height: 50px; /* Ajustez la hauteur minimale selon vos besoins */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
