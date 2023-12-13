@@ -1,0 +1,6 @@
+#bouton{display:flex;justify-content : space-evenly}
+
+#bouton button,p{width: 75%}
+
+
+body{background-color: blueviolet;}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Création fiche Anime</title>
+    <link rel="stylesheet" href="../librairies/fontawesome-free-6.4.2-web/css/all.css">
+    <link rel="stylesheet" href="../css/fiche_anime.css">
+    <link rel="stylesheet" href="https://harvesthq.github.io/chosen/chosen.css">
+</head>
+
+<body>
+    <section id="page_anime">
+        <form id="myForm">
+            <!-- premier bloc lié au information -->
+            <section id="formulaire">
+                <!-- première colonne avec la photo et les boutons -->
+                <div>
+                    <div>
+                        <!-- bloc contenant la photo et l'image -->
+                        <div>
+                            <!-- bouton pour enregistrer -->
+                            <input type="submit" value="enregistrer" id="enregistrer">
+                            <!-- carré pour prévisualiser l'image -->
+                            <div id="imagePreview"></div>
+                            <br>
+                            <!-- formulaire d'insertion d'image -->
+                            <label>Choisissez une image :</label>
+                            <input type="file" id="image" name="image" accept="image/*" onchange="previewImage()"
+                                oninput="previewImage()" required> <br>
+                        </div>
+                    </div>
+                </div>
+                <!-- deuxiéme colonne avec le texte & les formulaire -->
+                <div id="txt">
+                    <label for="titreOriginal" id="nom">Titre original</label> <br>
+                    <input type="text" name="fname" id="titreOriginal" required><br>​​
+                    <br>
+                    <label for="titreFrancais">Titre français</label> <br>
+                    <input type="text" name="fname" id="titreFrancais" required>​​  <br>
+                    <br>
+                    <label for="origine">Origine</label>  <br>
+                    <input type="text" name="fname" id="origine" required>​​ <br>
+                    <br>
+                    <label for="genre">Genre</label> <br>
+                    <select data-placeholder="Choose tags ..." name="tags[]" multiple class="chosen-select" id="genre" required>
+                        <option value="action">Action</option>
+                        <option value="Amour & Amitié">Amour & Amitié</option>
+                        <option value="Animation 3D">Animation 3D</option>
+                        <option value="Aventure">Aventure</option>
+                        <option value="Cartoon & Comic">Cartoon & Comic</option>
+                        <option value="Combat & Arts Mart">Combat & Arts Mart</option>
+                        <option value="Comédie">Comédie</option>
+                        <option value="Contes & Récits">Contes & Récits</option>
+                        <option value="Cyber & Mecha">Cyber & Mecha</option>
+                        <option value="Documentaire">Documentaire</option>
+                        <option value="Drame">Drame</option>
+                        <option value="Ecchi">Ecchi</option>
+                        <option value="éducatif">éducatif</option>
+                        <option value="énigme">énigme & Policier</option>
+                        <option value="épique & Héroïque">épique & Héroïque</option>
+                        <option value="Espace & Sci-fiction">Espace & Sci-fiction</option>
+                        <option value="Familial & Jeunesse">Familial & Jeunesse</option>
+                        <option value="Fantastique & Mythe">Fantastique & Mythe</option>
+                        <option value="Hentai">Hentai</option>
+                        <option value="Historique">Historique</option>
+                        <option value="Horreur">Horreur</option>
+                        <option value="Magical girl">Magical girl</option>
+                        <option value="Musical">Musical</option>
+                        <option value="Shojo-Ai">Shojo-Ai</option>
+                        <option value="Shonen-Ai">Shonen-Ai</option>
+                        <option value="Sport">Sport</option>
+                        <option value="Tranche de vie">Tranche de vie</option>
+                        <option value="yaoi">Yaoi</option>
+                    </select> <br>
+                    <label for="thème">Thème</label> <br>
+                    <select data-placeholder="Choose tags ..." name="tags[]" multiple class="chosen-select" id="thème" required>
+                        <option value="Amour interdit">Amour interdit</option>
+                        <option value="Identité et Exploration de soi">Identité et Exploration de soi</option>
+                        <option value="Vengeance">Vengeance</option>
+                        <option value="Survie">Survie</option>
+                        <option value="Perte et Deuil">Perte et Deuil</option>
+                        <option value="Pouvoir et Responsabilité">Pouvoir et Responsabilité</option>
+                        <option value="Corruption">Corruption</option>
+                        <option value="Rédemption">Rédemption</option>
+                        <option value="Exploration spatiale">Exploration spatiale</option>
+                        <option value="Intelligence Artificielle">Intelligence Artificielle</option>
+                        <option value="Manipulation Mentale">Manipulation Mentale</option>
+                        <option value="équilibre de la nature">équilibre de la nature</option>
+                        <option value="Rébellion">Rébellion</option>
+                        <option value="Amnésie">Amnésie</option>
+                        <option value="Changement social">Changement social</option>
+                        <option value="Conflit interne">Conflit interne</option>
+                        <option value="Temporalité">Temporalité</option>
+                        <option value="éducation">éducation</option>
+                        <option value="Exploration culturelle">Exploration culturelle</option>
+                        <option value="Technologie dystopique">Technologie dystopique</option>
+                    </select> <br>
+                </div>
+                <!-- troisiéme colonne avec du texte -->
+                <div>
+                    <label for="Année de diffusion">Année de diffusion</label> <br>
+                    <input type="number" name="fname" id="annee_de_diffusion" required><br>​​
+                    <br>
+                    <label for="Nombre d'épisode">Nombre d'épisode</label> <br>
+                    <input type="number" name="fname" id="nombre_d_episode" required>​​ <br>
+                    <br>
+                    <label for="Studio d'animation">Studio d'animation</label> <br>
+                    <input type="text" name="fname" id="studio_animation">​​ <br>
+                </div>
+                <!-- deuxième bloc lié aux boutons -->
+            </section>
+            <div id="bouton">
+                <!-- bouton ajouter au favoris -->
+                <button type="button" id="favoris"><i class="far fa-star"></i> Favoris</button>
+                <!-- affichage -->
+                <p>affichage note</p>
+                <!-- bouton musique & fiche personnage -->
+                <button type="button" id="musique"><i class="fa-solid fa-music"></i></button> <button
+                    type="button" id="personnage"><i class="fa-solid fa-user"></i> Personnages</button>
+            </div>
+            <!-- troisième bloc lié au synopsis -->
+            <div id="Synopsis">
+                <h2 id="syno">Synopsis</h2>
+                <label for="zoneTexte"></label> <br>
+                <textarea id="synob" name="zoneTexte" rows="4" cols="50" resize="none"></textarea>
+            </div>
+        </form>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://harvesthq.github.io/chosen/chosen.jquery.js"></script>
+    <script src="../Js/fiche_anime.js" type="text/javascript"></script>
+    <script>document.getElementsByClassName('output').innerHTML = location.search
+        $(".chosen-select").chosen()
+    </script>
+</body>
+</html>
+
+
