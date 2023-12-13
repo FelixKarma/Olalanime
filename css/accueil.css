@@ -3,7 +3,7 @@ body {
     background: url(../img/anime-wallpaper.jpg);
     margin: 0;
     background-repeat: repeat-y;
-    
+    background-size: cover;
     background-position-y: 200px;
 
 	/* height: 100vh; */
