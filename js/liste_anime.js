@@ -9,9 +9,29 @@ document.addEventListener('DOMContentLoaded', () => {
                     // Création de l'élément de liste
                     const listItem = document.createElement('li');
                     listItem.style.display = 'flex'; // Utiliser flexbox pour aligner les éléments horizontalement
+                    // Ajouter des styles pour créer un rectangle de couleur grise autour de l'élément de liste
+                    listItem.style.border = '1px solid #ccc';
+                    listItem.style.margin = '10px';
+                    listItem.style.padding = '10px';
+                    listItem.style.backgroundColor = '#D3D3D3' 
+                    listItem.style.borderTopRightRadius = '30%'
+                    listItem.style.borderBottomRightRadius = '30%'
+
+                    document.body.style.background = 'linear-gradient(rgb(65, 36, 82) 0%, rgb(181, 97, 123) 71.46%)';
                 
                     // Création de la div contenant l'image
                     const imageContainer = document.createElement('div');
+
+                     // Ajout de la marge supérieure pour déplacer les éléments vers le bas
+                     const linksContainer = document.getElementById('links-container');
+                     linksContainer.style.marginTop = '25%'
+                    
+                    
+                    // Ajout de la marge pour déplacer le bouton en haut à gauche
+                    const redirectButton = document.getElementById('redirect-button');
+                    redirectButton.style.marginLeft = '50%'
+
+                    
                 
                     // Création de l'image
                     const image = document.createElement('img');
@@ -35,6 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     const link = document.createElement('a');
                     link.href = `fiche_anime_affichage.html?id=${anime.id}`;
                     link.textContent = anime.titreoriginal;
+                    link.style.textDecoration = 'none'
+                    link.style.color = '#000000'
                 
                     // Ajouter le lien au conteneur de texte
                     textContainer.appendChild(link);
@@ -69,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const redirectButton = document.getElementById('redirect-button');
     redirectButton.addEventListener('click', () => {
         // Rediriger vers la nouvelle page
-        window.location.href = 'nouvelle_page.html';
+        window.location.href = '../html/fiche_anime_crea.html';
     });
 
     // Fonction pour décoder une chaîne base64
