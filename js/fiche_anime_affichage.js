@@ -1,3 +1,5 @@
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const resultContainer = document.getElementById('result-container');
     resultContainer.style.display = 'flex';
@@ -39,6 +41,18 @@ document.addEventListener('DOMContentLoaded', () => {
                             infoLeftDiv.appendChild(createParagraph(key, value));
                         }
                     });
+
+                    // Calculez la hauteur disponible pour centrer le contenu
+                    const windowHeight = window.innerHeight;
+                    const resultContainerHeight = resultContainer.clientHeight;
+
+                    // Calculez la marge supérieure pour centrer le contenu
+                    const marginTop = (windowHeight - resultContainerHeight) / 2;
+
+                    // Ajoutez la marge supérieure pour centrer le contenu
+                    resultContainer.style.marginTop = marginTop + 'px';
+
+
 
                     // Ajout de la div d'information (partie gauche) au conteneur principal
                     resultContainer.appendChild(infoLeftDiv);
