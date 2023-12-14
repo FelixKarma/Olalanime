@@ -1,0 +1,164 @@
+@font-face {
+    font-family: "Ninja Naruto";
+    src: url("njnaruto.ttf");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Ninja Naruto";
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.slide {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    height: 100vh;
+    color: #FDD501;
+
+}
+
+
+
+.deux {
+    width: 100%;
+    background-image: url(../img/Narutowallpaper.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.trois {
+    background-image: url(../img/SasukeWall.jpg);
+    background-size: cover;
+
+}
+
+
+.quatre {
+    background-image: url(../img/SakuraWallP.png);
+    background-size: cover;
+}
+
+.cinq {
+    background-image: url(../img/kakshiwall.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.six {
+    background-image: url(../img/borutowall.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+.sept{
+    background-image: url(../img/Itachiwallpapers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#background-video {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: flex;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    z-index: -1;
+}
+
+
+video {
+    width: 100%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#kunai {
+    position: fixed;
+    left: 92%;
+    bottom: 5%;
+    cursor: pointer;
+}
+
+#kunai2 {
+    position: fixed;
+    left: 92%;
+    top: 2%;
+    cursor: pointer;
+}
+
+img {
+    background-size: cover;
+}
+
+#slide2 {
+    color: orange;
+}
+
+#slide3 {
+    color: black;
+}
+
+#slide4 {
+    color:palevioletred;
+    
+}
+
+#slide5 {
+    color:red;
+}
+
+#slide6 {
+    color:rgba(0, 157, 255, 0.64);
+}
+
+#logoNaruto {
+    height: 100px;
+    width: 250px;
+    position:fixed;
+    top: 0;
+    left: 0;
+}
+button{
+    position: relative;
+    top: 100px;
+    right: 400px;
+    background-color:#FDD501;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: "Ninja Naruto";
+    padding: 15px 25px;
+    cursor: pointer;
+
+}
+
+#boutoncolor2{
+    background-color: blueviolet;
+}
+#boutoncolor3{
+    background-color:palevioletred ;
+}
+#boutoncolor4{
+    background-color: red;
+}
+#boutoncolor5{
+    background-color:rgba(0, 157, 255, 0.64) ;
+}
+

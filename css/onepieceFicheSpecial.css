@@ -1,0 +1,271 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.slide {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    height: 100vh;
+    color: #FDD501;
+
+}
+
+
+
+.deux {
+    width: 100%;
+    background-image: url(../img/Luffywallpaper.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.trois {
+    background-image: url(../img/zorowallpaper.png);
+    background-size: cover;
+
+}
+
+
+.quatre {
+    background-image: url(../img/Sanjiwallpaper.jpeg);
+    background-size: cover;
+}
+
+.cinq {
+    background-image: url(../img/lawwallpaper.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.six {
+    background-image: url(../img/marshallWallPapers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+.sept {
+    background-image: url(../img/WallpapersOnePiece7.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#background-video {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: flex;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    z-index: -1;
+}
+
+
+video {
+    width: 100%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#kunai {
+    position: fixed;
+    left: 92%;
+    bottom: 5%;
+    cursor: pointer;
+}
+
+#kunai2 {
+    position: fixed;
+    left: 92%;
+    top: 2%;
+    cursor: pointer;
+}
+
+img {
+    background-size: cover;
+}
+
+#slide2 {
+    color: white;
+}
+
+#slide3 {
+    color: green;
+}
+
+#slide4 {
+    color: yellow;
+}
+
+#slide5 {
+    color: red;
+}
+
+#slide6 {
+    color: black(0, 157, 255, 0.64);
+}
+
+#logoNaruto {
+    height: 100px;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+button {
+    margin-left: 20px;
+    background-color: violet;
+    border-radius: 5px;
+    font-size: 20px;
+
+
+}
+
+.one-piece-button {
+    display: flex;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+    color: #ffe920;
+    background-color: #e32121;
+    border: 2px solid #c0392b;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.one-piece-button:hover {
+    background-color: #c0392b;
+}
+
+#lawfont {
+    position: relative;
+    top: 20%;
+}
+
+
+
+#boutoncolor1{
+    background-color:rgb(0, 128, 175);
+    color: white;
+    border-color: whitesmoke;
+    display: flex;
+    top: 30px;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+}
+
+#boutoncolor1:hover{
+    background-color: #d41500ba;
+
+}
+
+#boutoncolor2{
+    background-color: green;
+    color: black;
+    display: flex;
+    top: 30px;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-color: grey;
+}
+
+#boutoncolor2:hover{
+    background-color: darkgray;
+}
+
+#boutoncolor3{
+    background-color: black;
+    color: red;
+}
+
+#boutoncolor4{
+    background-color: black;
+    color: red;
+    position: relative;
+    left: -35%;
+}
+
+#boutoncolor5 {
+    background-color: rgb(23, 143, 218);
+}
+
+#boutoncolor3{
+    background-color: rgb(226, 226, 24);
+    color:cornflowerblue;
+    display: flex;
+    top: 30px;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-color:yellow;
+}
+
+#boutoncolor3:hover{
+    background-color:yellowgreen
+}
+#boutoncolor2:hover{
+    background-color: darkgray;
+}
+
+#boutoncolor4:hover{
+    background-color: white;
+}
+
+#boutoncolor5   {
+    background-color: #990000;
+    color:#560d34ef;
+    display: flex;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-color:black;
+    position: relative;
+    left: 30px;
+}
+
+#boutoncolor5:hover{
+    background-color:#560d34ef;
+    color: #990000;
+}
