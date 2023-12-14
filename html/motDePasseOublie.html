@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Réinitialiser mon mot de passe</title>
     <link rel="stylesheet" href="../css/motDePasseOublie.css">
+    <link rel="stylesheet" href="../css/header.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap" rel="stylesheet">
 
 
@@ -24,8 +25,9 @@
             </div>
             <h2 class="title">Olalanime</h2>
             <div class="header-droite">
-                <button class="conection">connexion</button>
-                <button class="register">inscription</button>
+                <button class="conection" id="connexion"><a href="connexion.html">connexion</a></button>
+                <button class="conection" id="logoutBtn"><a href="Accueil.html">deconnexion</a></button>
+                <button class="register" id="inscription"><a href="connexion.html#inscription">inscription</a></button>
                 <div class="search">
                     <input type="search" id="search" placeholder="Rechercher">
                     <img src="../img/Vector.png" alt="vector" id="vector">
@@ -77,6 +79,7 @@
         </div>
 
         <script src="../js/motDePasseOublie.js"></script>
+        <script src="../js/boutonLoginLogout.js"></script>
 </body>
 
 </html>
