@@ -7,7 +7,7 @@
     <title>Olalanime</title>
     <link rel="icon" href="../img/emoji jap.png">
     <link rel="stylesheet" href="../css/accueil.css">
-    <link rel="stylesheet" href="../css/header.css">
+    
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../img/images.jfif">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap" rel="stylesheet">
@@ -32,7 +32,8 @@
             </a>
             <div class="header-droite">
                 <button class="conection" id="connexion"><a href="connexion.html">connexion</a></button>
-                <button class="register" id="inscription"><a href="connexion.html">inscription</a></button>
+                <button class="conection" id="logoutBtn"><a href="Accueil.html">deconnexion</a></button>
+                <button class="register" id="inscription"><a href="connexion.html#inscription">inscription</a></button>
                 <div class="search">
                     <input type="search" id="search" placeholder="Rechercher">
                     <img src="../img/Vector.png" alt="vector" id="vector">
@@ -48,7 +49,7 @@
             <button class="fiche">
                 <h2>fiche</h2>
             </button>
-            <button class="decouverte">
+            <button class="decouverte" onclick="window.location.assign('../html/decouverte.html');">
                 <h2>Decouverte</h2>
             </button>
             <button class="forum" onclick="window.open('https://www.manga-fan.org/', '_blank');">
@@ -61,13 +62,63 @@
         </nav>
         <div id="carousel-container">
             <div id="carousel">
-                <div class="carousel-item"><img src="../img/naruto-manga.jpg" alt="Image 1"></div>
-                <div class="carousel-item"><img src="../img/one-piece-manga.jpg" alt="Image 2"></div>
-                <div class="carousel-item"><img src="../img/one-punch-man-manga.jpg" alt="Image 3"></div>
-                <div class="carousel-item"><img src="../img/hunter-x-hunter-manga.jpg" alt="Image 3"></div>
-                <div class="carousel-item"><img src="../img/Bleach-manga.jpg" alt="Image 3"></div>
-                <div class="carousel-item"><img src="../img/Dragon-ball-Manga.jpg" alt="Image 3"></div>
-                <div class="carousel-item"><img src="../img/death-note-manga.jpg" alt="Image 3"></div>
+                <div class="carousel-item">
+                      <figure>
+                       <a href="..//html/Naruto.html">
+                        <img src="../img/naruto-manga.jpg" alt="Image 1">
+                       </a>
+                      </figure>
+                </div>
+
+                <div class="carousel-item">
+                      <figure>
+                        <a href="..//html/OnePiece.html">
+                         <img src="../img/one-piece-manga.jpg" alt="Image 2">
+                        </a>
+                      </figure>
+                </div>
+
+                <div class="carousel-item">
+                    <figure>
+                       <a href="..//html/OnePunchMan.html">
+                        <img src="../img/one-punch-man-manga.jpg" alt="Image 3">
+                       </a>
+                    </figure>
+                </div>
+
+                <div class="carousel-item">
+                    <figure>
+                        <a href="..//html/HunterxHunter.html">
+                          <img src="../img/hunter-x-hunter-manga.jpg" alt="Image 3">
+                        </a>
+                    </figure>
+                </div>
+                
+                <div class="carousel-item">
+                    <figure>
+                        <a href="..//html/Bleach.html">
+                         <img src="../img/Bleach-manga.jpg" alt="Image 3">
+                        </a>
+                    </figure>
+                </div>
+                
+                <div class="carousel-item">
+                    <figure>
+                      <a href="..//html/DragonBall.html">
+                        <img src="../img/Dragon-ball-Manga.jpg" alt="Image 3">
+                      </a>
+                    </figure>
+                </div>
+                
+                <div class="carousel-item">
+                    <figure>
+                      <a href="..//html/DeathNote.html">
+                        <img src="../img/death-note-manga.jpg" alt="Image 3">
+                      </a>
+                    </figure>
+                </div>
+
+
                 <!-- Ajoutez d'autres éléments de carrousel au besoin -->
             </div>
             <img src="../img/fleche.png" alt="fleche.png"onclick="prevSlide()" class="btnCaroussel" id="btnCarousselG">

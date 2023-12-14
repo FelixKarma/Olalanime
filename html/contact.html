@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/header.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/footer.css">
     <title>Contacts</title>
@@ -27,8 +28,9 @@
                     <h2 class="title">Olalanime</h2>
 
                 <div class="header-droite">
-                    <button class="conection"><a href="connexion.html">connexion</a></button>
-                    <button class="register"><a href="connexion.html">inscription</a></button>
+                    <button class="conection" id="conection" onclick="localStorage.setItem('previousPage', window.location.href);"><a href="connexion.html">connexion</a></button>
+                <button class="conection" id="logoutBtn"><a href="Accueil.html">deconnexion</a></button>
+                <button class="register" id="register"><a href="connexion.html">inscription</a></button>
                     <div class="search">
                         <input type="search" id="search" placeholder="Rechercher">
                         <img src="../img/Vector.png" alt="vector" id="vector">
@@ -43,10 +45,10 @@
                         <button class="fiche">
                             <h2>Fiche</h2>
                         </button>
-                        <button class="decouverte">
+                        <button class="decouverte" onclick="window.location.assign('../html/decouverte.html');">
                             <h2>Découverte</h2>
                         </button>
-                        <button class="forum">
+                        <button class="forum" onclick="window.open('https://www.manga-fan.org/', '_blank');">
                             <h2>Forum</h2>
                         </button>
                         <button  class="goodies" onClick="window.open('../html/Goodies.html', '_blank')" >
@@ -114,6 +116,7 @@
     </main>
 
     <script src="../js/contact.js"></script>
+    <script src="../js/boutonLoginLogout.js"></script>
 </body>
 
 </html>

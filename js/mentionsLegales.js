@@ -150,3 +150,4 @@ Le prestataire externe pourra éventuellement recueillir des informations sur le
 10. Droit applicable et attribution de juridiction.
 
 Tout litige en relation avec l’utilisation du site https://www.olalanime.com est soumis au droit français. En dehors des cas où la loi ne le permet pas, il est fait attribution exclusive de juridiction aux tribunaux compétents de MALAKOFF`
+
