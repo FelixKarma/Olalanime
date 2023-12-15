@@ -439,3 +439,12 @@ footer{
   font-weight: bold;
   
 }
+/* #customFooter{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+} */
+
+.space{
+  height: 325px;
+}

@@ -29,11 +29,13 @@ const div = document.createElement('div');
 
 // Créer les liens de pied de page
 const footerLinks = [
+    'contact.html',
     'RGPD.html',
     'CGU.html',
     'PolitiqueCookies.html',
     'mentionLegales.html',
     'QuiSommesNous.html'
+    
 ];
 
 footerLinks.forEach(link => {
@@ -51,13 +53,14 @@ footer.appendChild(div);
 footer.style.minWidth = '100%';
 footer.style.background = 'linear-gradient(180deg, #412452 0%, #B5617B 71.46%)';
 footer.style.textAlign = 'center';
-footer.style.position = 'absolute';
-footer.style.bottom = '1000';  // Modifier la position bottom à '0'
+footer.style.position = 'fixed';
+footer.style.bottom = '0';  // Modifier la position bottom à '0'
 footer.style.display = 'flex';
 footer.style.flexDirection = 'column';
 footer.style.justifyContent = 'space-between';
 footer.style.fontFamily = "'Roboto', sans-serif";
 footer.style.margin = '0';
+
 
 div.style.display = 'flex';
 div.style.justifyContent = 'space-between';
