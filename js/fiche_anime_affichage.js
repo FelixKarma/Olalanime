@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     infoLeftDiv.style.alignItems = 'center';
 
                     // Ajout des éléments d'information à la div (partie gauche)
-                    const leftKeys = ['titreoriginal', 'titrefrancais', 'origine', 'theme'];
+                    const leftKeys = ['titreoriginal', 'titrefrancais', 'origine','genre','theme'];
                     leftKeys.forEach(key => {
                         if (key !== 'img' && key !== 'id') {
                             const value = anime[key];
