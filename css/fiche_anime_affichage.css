@@ -2,5 +2,6 @@
 
 #bouton button,p{width: 75%}
 
+body {background: linear-gradient(rgb(65, 36, 82) 0%, rgb(181, 97, 123) 71.46%);}
 
-body{background-color: blueviolet;}
+#div1, #div2, #synopsisContainer {background-color:#D3D3D3 ;border-radius: 5%;}

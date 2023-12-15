@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // Création de la div pour le groupe 1
                 const divGroupe1 = document.createElement('div');
+                divGroupe1.id = 'div1'
                 ordreDesClesGroupe1.forEach(cle => {
                     if (cle !== 'img' && cle !== 'id') {
                         const valeur = premierDictionnaire[cle];
@@ -34,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // Création de la div pour le groupe 2
                 const divGroupe2 = document.createElement('div');
+                divGroupe2.id = 'div2'
                 ordreDesClesGroupe2.forEach(cle => {
                     if (cle !== 'img' && cle !== 'id') {
                         const valeur = premierDictionnaire[cle];
@@ -48,6 +50,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 const espacementDiv = document.createElement('div');
                 espacementDiv.style.marginTop = "15%" // Ajustez ici la hauteur de la marge
                 resultContainer.appendChild(espacementDiv);
+
+                document.body.style.marginTop = '20%'
+            
                 
                 // Ajout du synopsis en dehors de la section
                 resultContainer.insertAdjacentHTML('beforeend', '<h1>Synopsis</h1>');

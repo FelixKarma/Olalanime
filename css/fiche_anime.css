@@ -7,10 +7,10 @@
 .page_photo{display: flex}
 
 /* forme générale des blocs */
-#myForm div{justify-content: space-around;margin: 5%}
+#myForm div{justify-content: space-around;margin: 5%;background-color: #D3D3D3;border-radius: 5%;}
 
 /* formulaire complet (premier bloc) */
-#formulaire{display: flex;background-color}
+#formulaire{display: flex;margin-top: 20%;}
 
 #bouton{display:flex;justify-content : space-evenly}
 
@@ -18,7 +18,10 @@
 
 #text {justify-content: space-around}
 
+body {
+    background: linear-gradient(rgb(65, 36, 82) 0%, rgb(181, 97, 123) 71.46%);
+}
 
 /* synopsis */
-#Synopsis{ background-color: aqua}
+#Synopsis{ background-color:#D3D3D3 }
 textarea{resize:none;height: 250px;width: 95%; align-self: center}

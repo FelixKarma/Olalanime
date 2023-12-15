@@ -41,6 +41,7 @@ title.style.margin = '15px';
 title.style.fontFamily = "'Rock Salt', cursive";
 title.style.color = '#DDC772';
 
+
 // Création de l'élément div avec la classe "header-droite"
 const headerDroite = document.createElement('div');
 headerDroite.className = 'header-droite';
@@ -64,6 +65,7 @@ connexionListItem.appendChild(connexionButton);
 const registerListItem = document.createElement('li');
 const registerButton = document.createElement('button');
 const registerLink = document.createElement('a');
+registerLink.href = 'connexion.html'
 registerLink.textContent = 'Inscription';
 registerButton.className = 'register';
 registerButton.appendChild(registerLink);
@@ -227,6 +229,96 @@ header.style.position = 'absolute';
 header.style.top = '0';
 
 
+
+
+
 // Ajout du header à la balise div dédiée
 headerContainer.appendChild(header);
+
+// Création de l'élément li avec la classe "logout"
+const logoutListItem = document.createElement('li');
+
+// Création de l'élément button avec la classe "logout"
+const logoutButton = document.createElement('button');
+const logoutLink = document.createElement('a');
+logoutLink.href = 'file:///C:/Users/nurserie/Desktop/github/Olalanime/html/Accueil.html';  // Ajoutez l'URL appropriée
+logoutLink.textContent = 'Déconnexion';
+logoutButton.className = 'logout';
+logoutButton.appendChild(logoutLink);
+logoutListItem.appendChild(logoutButton);
+
+logoutButton.style.background = 'linear-gradient(180deg, #412452 39.17%, rgba(31, 18, 64, 0.99) 39.18%, rgba(213, 158, 181, 0.55) 70.42%)';
+logoutButton.style.borderRadius = '15px';
+logoutButton.style.margin = '10px';
+logoutButton.style.height = '30px';
+logoutButton.style.fontFamily = 'Roboto, sans-serif';
+logoutButton.style.fontSize = '20px';
+logoutButton.style.color = '#DDC772';
+
+// Styles pour le lien à l'intérieur du bouton "déconnexion"
+logoutLink.style.textDecoration = 'none';
+logoutLink.style.color = '#DDC772';
+
+// Ajout du bouton "déconnexion" à la liste
+headerList.appendChild(logoutListItem);
+
+// Création de l'élément li avec la classe "page-perso"
+const pagePersoListItem = document.createElement('li');
+
+// Création de l'élément button avec la classe "page-perso"
+const pagePersoButton = document.createElement('button');
+const pagePersoLink = document.createElement('a');
+pagePersoLink.href = 'http://127.0.0.1:5500/html/ficheUtilisateur.html';  // Ajoutez l'URL appropriée
+pagePersoLink.textContent = 'Page Perso';
+pagePersoButton.className = 'page-perso';
+pagePersoButton.appendChild(pagePersoLink);
+pagePersoListItem.appendChild(pagePersoButton);
+
+pagePersoButton.style.background = 'linear-gradient(180deg, #412452 39.17%, rgba(31, 18, 64, 0.99) 39.18%, rgba(213, 158, 181, 0.55) 70.42%)';
+pagePersoButton.style.borderRadius = '15px';
+pagePersoButton.style.margin = '10px';
+pagePersoButton.style.height = '30px';
+pagePersoButton.style.fontFamily = 'Roboto, sans-serif';
+pagePersoButton.style.fontSize = '20px';
+pagePersoButton.style.color = '#DDC772';
+
+// Styles pour le lien à l'intérieur du bouton "Page Perso"
+pagePersoLink.style.textDecoration = 'none';
+pagePersoLink.style.color = '#DDC772';
+
+// Ajout du bouton "Page Perso" à la liste
+headerList.appendChild(pagePersoListItem);
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const isLoggedIn = localStorage.getItem('isLoggedIn') == 'true';
+
+    if (isLoggedIn) {
+        logoutButton.style.display = 'block';
+        registerButton.style.display = 'none';
+        connexionButton.style.display = 'none';
+        pagePersoButton.style.display = 'block'
+
+    } else {
+        logoutButton.style.display = 'none';
+        registerButton.style.display = 'block';
+        connexionButton.style.display = 'block';
+        pagePersoButton.style.display = 'none'
+        
+    }
+    
+    logoutButton.addEventListener('click', function () {
+
+        localStorage.setItem('isLoggedIn', 'false');
+
+        // Redirigez l'utilisateur vers la page de connexion
+        window.location.href = 'login.html';
+    });
+});
+
+
+
 
